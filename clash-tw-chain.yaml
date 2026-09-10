@@ -80,7 +80,7 @@ proxies:
 proxy-providers:
   前置订阅:
     type: http
-    url: "https://url.v1.mk/sub?target=clash&url=https%3A%2F%2Fyx.jinjin909.ggff.net%2F633a113e-af18-4142-859b-e2ebae6d726e%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
+    url: "https://url.v1.mk/sub?target=clash&url=https%3A%2F%2Fyx.jinjin909.ggff.net%2F633a113e-af18-4142-859b-e2ebae6d726e%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=true&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
     interval: 21600
     override:
       additional-prefix: "前置|"
@@ -97,6 +97,9 @@ proxy-groups:
     proxies:
       - 前置自动
       - DIRECT
+    use:
+      - 前置订阅
+    exclude-filter: "Trojan"
   - name: 前置自动
     type: url-test
     url: https://www.gstatic.com/generate_204
