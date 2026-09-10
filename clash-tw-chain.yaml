@@ -1,0 +1,126 @@
+# 台湾家宽 + 前置链式（可直接给 Clash Meta / Mihomo 系手机客户端订阅）
+# 本机 → 前置订阅 → 台湾家宽 → 目标
+# 内核必须是 Clash Meta / Mihomo。原版 Clash、Shadowrocket、Quantumult X 不能用这份。
+
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+tcp-concurrent: true
+unified-delay: true
+find-process-mode: strict
+
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 223.5.5.5
+    - 8.8.8.8
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - tls://223.5.5.5
+
+tun:
+  enable: true
+  stack: mixed
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - any:53
+
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  override-destination: true
+  sniff:
+    HTTP:
+      ports: [80, "8080-8880"]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+
+proxies:
+  - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+    type: vless
+    server: 118.167.200.67
+    port: 24215
+    uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+    servername: addons.mozilla.org
+    client-fingerprint: ios
+    ip-version: ipv4
+    dialer-proxy: 前置选择
+  - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+    type: vless
+    server: 60.248.219.52
+    port: 443
+    uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: ty986gfazs.cainiaohub.xyz
+    network: ws
+    ws-opts:
+      path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+      headers:
+        Host: ty986gfazs.cainiaohub.xyz
+    ip-version: ipv4
+    dialer-proxy: 前置选择
+
+proxy-providers:
+  前置订阅:
+    type: http
+    url: "https://url.v1.mk/sub?target=clash&url=https%3A%2F%2Fyx.jinjin909.ggff.net%2F633a113e-af18-4142-859b-e2ebae6d726e%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
+    interval: 21600
+    override:
+      additional-prefix: "前置|"
+      udp: true
+      ip-version: ipv4
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+
+proxy-groups:
+  - name: 前置选择
+    type: select
+    proxies:
+      - 前置自动
+      - DIRECT
+  - name: 前置自动
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 120
+    tolerance: 50
+    lazy: false
+    use:
+      - 前置订阅
+    filter: "cm优选|visa中国|官方优选|icook|saas.sin.fan"
+    exclude-filter: "Trojan"
+  - name: PROXIES
+    type: select
+    proxies:
+      - AUTO
+      - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+      - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - name: AUTO
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 120
+    tolerance: 50
+    proxies:
+      - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+      - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+
+rules:
+  - MATCH,PROXIES
