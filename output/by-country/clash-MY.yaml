@@ -16,9 +16,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /arki
+    path: /arki?ed=2048
     headers:
-      Host: 47.250.45.234
+      Host: ''
 - name: 🇲🇾 MY 02 - xiaohe
   type: vless
   server: 38.60.168.98
