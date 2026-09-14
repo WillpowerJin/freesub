@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "194.87.59.12",
+      "server": "194.87.59.17",
       "server_port": 2085,
       "uuid": "128314f6-f09a-426f-b758-b8e559c38ddb",
       "transport": {
@@ -17,7 +17,7 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "194.87.59.17",
+      "server": "194.87.59.12",
       "server_port": 2085,
       "uuid": "128314f6-f09a-426f-b758-b8e559c38ddb",
       "transport": {

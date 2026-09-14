@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-      "server": "162.159.48.32",
-      "server_port": 8880,
+      "server": "162.159.43.187",
+      "server_port": 2052,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tls",
+        "path": "/?ed=2560security=tls ",
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
@@ -20,29 +20,6 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
-      "server": "172.64.80.1",
-      "server_port": 443,
-      "uuid": "a8890c1b-3622-3106-c4be-d8671be32d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "summer-meadow-af5b.woowoorrrkk.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "summer-meadow-af5b.woowoorrrkk.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe",
       "server": "62.233.39.9",
       "server_port": 8443,
       "uuid": "dca76b88-b038-e82b-45e1-1d76b476d7ca",
@@ -51,7 +28,7 @@
         "server_name": "dl.dell.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -70,8 +47,7 @@
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe"
       ]
     },
     {
@@ -79,8 +55,7 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

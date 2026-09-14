@@ -5,26 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 (移动家宽) - xiaohe",
-      "server": "170.168.99.8",
-      "server_port": 8443,
-      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
+      "server": "3.9.135.156",
+      "server_port": 51847,
+      "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.steamstatic.com",
+        "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "R8Mogel1wypEIpcUXnGmG1cuzT9POghNhqJcw4-CLx0",
-          "short_id": ""
+          "public_key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc",
+          "short_id": "0eec442e7b34d2f2"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
       }
     },
     {
@@ -32,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 (移动家宽) - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 (移动家宽) - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

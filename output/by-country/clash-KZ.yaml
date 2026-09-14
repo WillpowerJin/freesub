@@ -5,32 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 162.159.48.32
-  port: 8880
+  server: 162.159.43.187
+  port: 2052
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: '/?ed=2560security=tls '
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  server: 172.64.80.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: a8890c1b-3622-3106-c4be-d8671be32d2b
-  tls: true
-  servername: summer-meadow-af5b.woowoorrrkk.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: summer-meadow-af5b.woowoorrrkk.workers.dev
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   server: 62.233.39.9
   port: 8443
   udp: true
@@ -40,7 +25,7 @@ proxies:
   reality-opts:
     public-key: oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk
   servername: dl.dell.com
-  client-fingerprint: ios
+  client-fingerprint: qq
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
@@ -51,7 +36,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +43,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
 rules:
 - MATCH,PROXIES

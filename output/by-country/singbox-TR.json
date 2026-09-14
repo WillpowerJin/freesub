@@ -15,16 +15,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "188.132.174.236",
-      "server_port": 2086,
-      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
       "server": "188.132.174.236",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
@@ -32,38 +24,35 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
-      "server": "170.168.97.8",
-      "server_port": 8443,
-      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
+      "server": "156.67.63.231",
+      "server_port": 443,
+      "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "download.nvidia.com",
+        "server_name": "sync-bridge.org",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs",
-          "short_id": ""
+          "public_key": "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI",
+          "short_id": "5606d4a25c99e7af"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
       "server": "add.life-pro.ir",
       "server_port": 8082,
       "uuid": "79f98593-6a21-4783-a425-3d5609a79df1"
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - xiaohe",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
       "server": "172.67.151.109",
       "server_port": 443,
       "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
@@ -89,8 +78,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 06 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 05 - xiaohe"
       ]
     },
     {
@@ -101,8 +89,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 06 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
