@@ -6,6 +6,23 @@
 
 ---
 
+## 📱 手机链式订阅（前置代理，可直接用）
+
+> 大陆直连免费节点通常不可用，这份配置会走 **本机 → 前置订阅 → 家宽/节点 → 目标**。
+> iOS / Android 的 **Clash Meta** 订 YAML；Android **v2rayNG** 用自定义 JSON（内核须是 Xray）。
+> 原版 Clash、Shadowrocket、Quantumult X 不能用链式配置。
+
+| 客户端 | 用法 | 免翻 CDN | 官方 Raw |
+| :--- | :--- | :--- | :--- |
+| **Clash Meta**（iOS / Android） | 配置 → 添加 → **URL 订阅**（整份配置，不是代理集） | [CDN](https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/clash-tw-chain.yaml?v=1789457727) | [Raw](https://raw.githubusercontent.com/WillpowerJin/freesub/main/clash-tw-chain.yaml) |
+| **v2rayNG**（Android） | 右上角 `+` → **手动输入[自定义配置]** → 粘贴 JSON | [CDN](https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/v2rayng-chain.json?v=1789457727) | [Raw](https://raw.githubusercontent.com/WillpowerJin/freesub/main/output/v2rayng-chain.json) |
+
+**Clash Meta 导入后：** 打开 VPN / TUN → 代理组 **前置选择 = 前置自动**（不要选 DIRECT）→ **PROXIES = 家宽自动**（或 台湾自动 / 全部自动）。本轮写入 1 个可套链家宽、5 个可套链台湾节点；Hysteria2 不会进链式。
+
+**v2rayNG 导入后：** 选中「链式·家宽+台湾」这条自定义配置再连接。它会经兜底前置自动挑延迟最低的家宽/台湾节点。JSON 随 Actions 更新，重新打开链接粘贴即可。
+
+---
+
 ## 📌 全部节点总订阅链接
 
 | 客户端 / 格式类型 | 节点总数 | 免翻 CDN 订阅直链 (国内直连) | 官方原生 Raw 直链 (开启代理) |

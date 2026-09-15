@@ -1,0 +1,330 @@
+{
+  "remarks": "链式·家宽+台湾",
+  "log": {
+    "loglevel": "warning"
+  },
+  "dns": {
+    "servers": [
+      "https://dns.alidns.com/dns-query",
+      "223.5.5.5",
+      "8.8.8.8"
+    ]
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    },
+    {
+      "tag": "http",
+      "listen": "127.0.0.1",
+      "port": 10809,
+      "protocol": "http",
+      "settings": {}
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "n01",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "36.224.152.189",
+            "port": 50099,
+            "method": "chacha20-ietf-poly1305",
+            "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+          }
+        ]
+      },
+      "streamSettings": {
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n02",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "35.221.158.209",
+            "port": 32981,
+            "users": [
+              {
+                "id": "41b96ee9-ee5e-455f-9753-187a9dead97a",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.sony.com",
+          "fingerprint": "random",
+          "publicKey": "JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E",
+          "shortId": "70f4b7a4c40636",
+          "spiderX": ""
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n03",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "35.201.163.218",
+            "port": 30837,
+            "users": [
+              {
+                "id": "85a6bd94-83a9-4e80-849f-c06d7011d1a4",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.sony.com",
+          "fingerprint": "firefox",
+          "publicKey": "LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo",
+          "shortId": "97101ba788915e5a",
+          "spiderX": ""
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n04",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "35.229.136.113",
+            "port": 35412,
+            "users": [
+              {
+                "id": "5d3cbdb2-b82d-4078-82b8-5dd413cca82b",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.amd.com",
+          "fingerprint": "firefox",
+          "publicKey": "eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4",
+          "shortId": "0630b874d595",
+          "spiderX": ""
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n05",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "60.248.219.78",
+            "port": 443,
+            "users": [
+              {
+                "id": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ty986gfazs.cainiaohub.xyz",
+          "allowInsecure": true
+        },
+        "wsSettings": {
+          "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
+          "headers": {
+            "Host": "ty986gfazs.cainiaohub.xyz"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "front-cm",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "youxuan1.cf.090227.xyz",
+            "port": 443,
+            "users": [
+              {
+                "id": "633a113e-af18-4142-859b-e2ebae6d726e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "yx.jinjin909.ggff.net",
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "wsSettings": {
+          "path": "/?ed=2048",
+          "headers": {
+            "Host": "yx.jinjin909.ggff.net"
+          }
+        }
+      }
+    },
+    {
+      "tag": "front-visa",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.visa.cn",
+            "port": 443,
+            "users": [
+              {
+                "id": "633a113e-af18-4142-859b-e2ebae6d726e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "yx.jinjin909.ggff.net",
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "wsSettings": {
+          "path": "/?ed=2048",
+          "headers": {
+            "Host": "yx.jinjin909.ggff.net"
+          }
+        }
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {}
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "ip": [
+          "geoip:private"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "geosite:cn",
+          "domain:ggff.net",
+          "domain:090227.xyz",
+          "domain:visa.cn",
+          "domain:jsdelivr.net"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "ip": [
+          "geoip:cn"
+        ]
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "balancerTag": "chain"
+      }
+    ],
+    "balancers": [
+      {
+        "tag": "chain",
+        "selector": [
+          "n"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        }
+      }
+    ]
+  },
+  "observatory": {
+    "subjectSelector": [
+      "n"
+    ],
+    "probeUrl": "https://www.gstatic.com/generate_204",
+    "probeInterval": "1m",
+    "enableConcurrency": true
+  }
+}

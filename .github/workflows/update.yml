@@ -35,6 +35,12 @@ jobs:
           # 便于 ip-api 等识别限速; GitHub runner 出口为美国 Azure
           PYTHONUNBUFFERED: '1'
 
+      - name: Build mobile chain configs (Clash Meta + v2rayNG)
+        run: |
+          python scripts/export_chain.py
+        env:
+          PYTHONUNBUFFERED: '1'
+
       - name: Upload test artifacts (调试用, 7天保留)
         uses: actions/upload-artifact@v4
         if: always()
@@ -49,7 +55,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A output/ README.md
+          git add -A output/ README.md clash-tw-chain.yaml
           if git diff --staged --quiet; then
             echo "没有节点变动与内容更新。"
           else
