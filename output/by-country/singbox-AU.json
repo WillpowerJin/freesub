@@ -4,56 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "208.103.161.5",
-      "server_port": 443,
-      "uuid": "d042a74a-c305-4eec-a89f-39a348022c92",
-      "tls": {
-        "enabled": true,
-        "server_name": "dry-butterfly-8eb9.tmpgnacio83.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-      "server": "82.198.246.233",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
+      "server": "82.198.246.250",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-      "server": "51.161.204.242",
-      "server_port": 443,
-      "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE",
-          "short_id": "d15c17cef9b2e456"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
+      "server": "82.38.31.187",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
     },
     {
       "type": "selector",
@@ -61,8 +25,7 @@
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe"
       ]
     },
     {
@@ -70,8 +33,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
