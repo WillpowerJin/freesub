@@ -43,8 +43,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.64.52.6",
-            "port": 8080,
+            "address": "162.159.38.127",
+            "port": 2052,
             "users": [
               {
                 "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
@@ -69,18 +69,29 @@
     },
     {
       "tag": "n02",
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "R3MRCG00129437X.cybervena.com",
-            "port": 50099,
-            "method": "chacha20-ietf-poly1305",
-            "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+            "address": "108.162.198.178",
+            "port": 8880,
+            "users": [
+              {
+                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+                "encryption": "none"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          }
+        },
         "sockopt": {
           "dialerProxy": "front-cm"
         }
@@ -88,25 +99,6 @@
     },
     {
       "tag": "n03",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "r3mrcg001286ek2.cybervena.com",
-            "port": 50099,
-            "method": "chacha20-ietf-poly1305",
-            "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-          }
-        ]
-      },
-      "streamSettings": {
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n04",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -140,39 +132,7 @@
       }
     },
     {
-      "tag": "n05",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "118.167.212.163",
-            "port": 24215,
-            "users": [
-              {
-                "id": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "addons.mozilla.org",
-          "fingerprint": "firefox",
-          "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "shortId": "",
-          "spiderX": ""
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n06",
+      "tag": "n04",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -194,7 +154,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "www.cloudflare.com",
-          "fingerprint": "safari",
+          "fingerprint": "ios",
           "publicKey": "Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM",
           "shortId": "5e13a6d43d0644c9",
           "spiderX": ""
@@ -205,17 +165,37 @@
       }
     },
     {
-      "tag": "n07",
+      "tag": "n05",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "36.224.185.143",
+            "port": 50099,
+            "method": "chacha20-ietf-poly1305",
+            "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+          }
+        ]
+      },
+      "streamSettings": {
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n06",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "hinet1.2yly.com",
-            "port": 24215,
+            "address": "35.194.157.16",
+            "port": 43450,
             "users": [
               {
-                "id": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-                "encryption": "none"
+                "id": "64d77a12-ad6b-4d85-a349-bd287535af1c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
@@ -225,10 +205,10 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "addons.mozilla.org",
+          "serverName": "www.amd.com",
           "fingerprint": "chrome",
-          "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "shortId": "",
+          "publicKey": "HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o",
+          "shortId": "e65d010354bdad73",
           "spiderX": ""
         },
         "sockopt": {
