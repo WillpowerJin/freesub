@@ -75,6 +75,40 @@ DIALER_GROUP = "前置选择"
 MAX_V2RAYNG_CHAIN = 20
 CHAIN_README_MARKER = "## 📱 手机链式订阅（前置代理，可直接用）"
 
+# url-test：HTTP 探测、短超时、少失败次数，链式双跳也能尽快换节点
+PROBE_URL = "http://www.gstatic.com/generate_204"
+
+
+def urltest_group(
+    name: str,
+    proxies: list[str] | None = None,
+    use: list[str] | None = None,
+    *,
+    interval: int = 30,
+    timeout: int = 2000,
+    max_failed: int = 2,
+    tolerance: int = 150,
+    lazy: bool = False,
+    exclude_filter: str | None = None,
+) -> dict[str, Any]:
+    group: dict[str, Any] = {
+        "name": name,
+        "type": "url-test",
+        "url": PROBE_URL,
+        "interval": interval,
+        "timeout": timeout,
+        "max-failed-times": max_failed,
+        "tolerance": tolerance,
+        "lazy": lazy,
+    }
+    if proxies:
+        group["proxies"] = proxies
+    if use:
+        group["use"] = use
+    if exclude_filter:
+        group["exclude-filter"] = exclude_filter
+    return group
+
 
 def repo_name() -> str:
     return os.environ.get("GITHUB_REPOSITORY", "WillpowerJin/freesub").strip() or "WillpowerJin/freesub"
@@ -144,59 +178,36 @@ def build_clash_chain(
             "use": ["前置订阅"],
             "exclude-filter": "Trojan",
         },
-        {
-            "name": "前置自动",
-            "type": "url-test",
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": 120,
-            "tolerance": 50,
-            "lazy": False,
-            "proxies": ["兜底|cm优选1", "兜底|visa中国"],
-            "use": ["前置订阅"],
-            "exclude-filter": "Trojan",
-        },
+        urltest_group(
+            "前置自动",
+            proxies=["兜底|cm优选1", "兜底|visa中国"],
+            use=["前置订阅"],
+            exclude_filter="Trojan",
+        ),
     ]
 
     select_proxies = ["家宽自动", "台湾自动", "全部自动", "前置自动"]
     if res_names:
-        groups.append({
-            "name": "家宽自动",
-            "type": "url-test",
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": 120,
-            "tolerance": 50,
-            "lazy": False,
-            "proxies": res_names,
-        })
+        groups.append(urltest_group("家宽自动", proxies=res_names))
         select_proxies.extend(res_names)
     else:
         select_proxies.remove("家宽自动")
 
     if tw_names:
-        groups.append({
-            "name": "台湾自动",
-            "type": "url-test",
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": 120,
-            "tolerance": 50,
-            "lazy": False,
-            "proxies": tw_names,
-        })
+        groups.append(urltest_group("台湾自动", proxies=tw_names))
         select_proxies.extend(n for n in tw_names if n not in res_names)
     else:
         select_proxies.remove("台湾自动")
 
-    groups.append({
-        "name": "全部自动",
-        "type": "url-test",
-        "url": "https://www.gstatic.com/generate_204",
-        "interval": 300,
-        "tolerance": 80,
-        "lazy": True,
-        "proxies": ["前置自动"],
-        "use": ["全部套链"],
-        "exclude-filter": "(?i)hysteria|hy2|tuic|anytls",
-    })
+    groups.append(urltest_group(
+        "全部自动",
+        proxies=["前置自动"],
+        use=["全部套链"],
+        interval=60,
+        tolerance=200,
+        lazy=True,
+        exclude_filter="(?i)hysteria|hy2|tuic|anytls",
+    ))
     groups.append({
         "name": "PROXIES",
         "type": "select",
@@ -270,8 +281,10 @@ def build_clash_chain(
                 },
                 "health-check": {
                     "enable": True,
-                    "url": "https://www.gstatic.com/generate_204",
-                    "interval": 300,
+                    "url": PROBE_URL,
+                    "interval": 60,
+                    "timeout": 2000,
+                    "lazy": False,
                 },
             },
             "全部套链": {
@@ -291,8 +304,9 @@ def build_clash_chain(
                 "health-check": {
                     "enable": True,
                     "lazy": True,
-                    "url": "https://www.gstatic.com/generate_204",
-                    "interval": 600,
+                    "url": PROBE_URL,
+                    "interval": 180,
+                    "timeout": 2000,
                 },
             },
         },
@@ -492,8 +506,8 @@ def build_v2rayng_chain(chain_proxies: list[dict[str, Any]]) -> dict[str, Any]:
         rules.append({"type": "field", "network": "tcp,udp", "balancerTag": "chain"})
         observatory = {
             "subjectSelector": ["n"],
-            "probeUrl": "https://www.gstatic.com/generate_204",
-            "probeInterval": "1m",
+            "probeUrl": PROBE_URL,
+            "probeInterval": "30s",
             "enableConcurrency": True,
         }
     else:
@@ -595,6 +609,7 @@ def dump_yaml(path: str, data: dict[str, Any]) -> None:
         "# 本机 → 前置订阅(直连下载) → 家宽/节点 → 目标\n"
         "# 原版 Clash、Shadowrocket、Quantumult X 不能用。\n"
         "# 前置选择请选「前置自动」。Hysteria2/TUIC 已排除。\n"
+        "# 自动组: HTTP 探测 / timeout 2s / 失败 2 次即换 / 家宽与台湾每 30s 测一次。\n"
     )
     with open(path, "w", encoding="utf-8") as f:
         f.write(header)

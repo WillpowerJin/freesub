@@ -14,14 +14,15 @@
 
 | 客户端 | 用法 | 免翻 CDN | 官方 Raw |
 | :--- | :--- | :--- | :--- |
-| **Clash Meta**（iOS / Android） | 配置 → 添加 → **URL 订阅**（整份配置，不是代理集） | [CDN](https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/clash-tw-chain.yaml?v=1789700486) | [Raw](https://raw.githubusercontent.com/WillpowerJin/freesub/main/clash-tw-chain.yaml) |
-| **v2rayNG**（Android） | 右上角 `+` → **手动输入[自定义配置]** → 粘贴 JSON | [CDN](https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/v2rayng-chain.json?v=1789700486) | [Raw](https://raw.githubusercontent.com/WillpowerJin/freesub/main/output/v2rayng-chain.json) |
+| **Clash Meta**（iOS / Android） | 配置 → 添加 → **URL 订阅**（整份配置，不是代理集） | [CDN](https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/clash-tw-chain.yaml?v=1789727396) | [Raw](https://raw.githubusercontent.com/WillpowerJin/freesub/main/clash-tw-chain.yaml) |
+| **v2rayNG**（Android） | 右上角 `+` → **手动输入[自定义配置]** → 粘贴 JSON | [CDN](https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/v2rayng-chain.json?v=1789727396) | [Raw](https://raw.githubusercontent.com/WillpowerJin/freesub/main/output/v2rayng-chain.json) |
 
 **Clash Meta 导入后：** 打开 VPN / TUN → 代理组 **前置选择 = 前置自动**（不要选 DIRECT）→ **PROXIES = 家宽自动**（或 台湾自动 / 全部自动）。本轮写入 2 个可套链家宽、7 个可套链台湾节点；Hysteria2 不会进链式。
 
 **v2rayNG 导入后：** 选中「链式·家宽+台湾」这条自定义配置再连接。它会经兜底前置自动挑延迟最低的家宽/台湾节点。JSON 随 Actions 更新，重新打开链接粘贴即可。
 
 ---
+
 
 ## 📌 全部节点总订阅链接
 

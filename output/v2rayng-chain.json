@@ -413,8 +413,8 @@
     "subjectSelector": [
       "n"
     ],
-    "probeUrl": "https://www.gstatic.com/generate_204",
-    "probeInterval": "1m",
+    "probeUrl": "http://www.gstatic.com/generate_204",
+    "probeInterval": "30s",
     "enableConcurrency": true
   }
 }
