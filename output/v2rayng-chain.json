@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.0.1",
-            "port": 443,
+            "address": "162.159.39.218",
+            "port": 2086,
             "users": [
               {
-                "id": "3ccba794-1c6d-48a8-acf2-f5caf0e69d86",
+                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
                 "encryption": "none"
               }
             ]
@@ -56,16 +56,10 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "all.speedtest03.ccwu.cc",
-          "allowInsecure": false,
-          "fingerprint": "chrome"
-        },
         "wsSettings": {
-          "path": "/",
+          "path": "/?ed=2560security=tls",
           "headers": {
-            "Host": "all.speedtest03.ccwu.cc"
+            "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
           }
         },
         "sockopt": {
@@ -75,25 +69,6 @@
     },
     {
       "tag": "n02",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "36.224.185.173",
-            "port": 50099,
-            "method": "chacha20-ietf-poly1305",
-            "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-          }
-        ]
-      },
-      "streamSettings": {
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n03",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -127,16 +102,16 @@
       }
     },
     {
-      "tag": "n04",
+      "tag": "n03",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "165.154.195.38",
-            "port": 35034,
+            "address": "dee2309db4944c248b6d4672c6641e25.oylfmxz.cn",
+            "port": 443,
             "users": [
               {
-                "id": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+                "id": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -145,39 +120,15 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n05",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "35.221.158.209",
-            "port": 32981,
-            "users": [
-              {
-                "id": "41b96ee9-ee5e-455f-9753-187a9dead97a",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.sony.com",
-          "fingerprint": "qq",
-          "publicKey": "JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E",
-          "shortId": "70f4b7a4c40636",
-          "spiderX": ""
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "dee2309db4944c248b6d4672c6641e25.oylfmxz.cn",
+          "allowInsecure": false
+        },
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
         },
         "sockopt": {
           "dialerProxy": "front-cm"
@@ -185,106 +136,7 @@
       }
     },
     {
-      "tag": "n06",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "35.194.157.16",
-            "port": 43450,
-            "users": [
-              {
-                "id": "64d77a12-ad6b-4d85-a349-bd287535af1c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.amd.com",
-          "fingerprint": "firefox",
-          "publicKey": "HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o",
-          "shortId": "e65d010354bdad73",
-          "spiderX": ""
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n07",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.199.219.172",
-            "port": 40800,
-            "users": [
-              {
-                "id": "5859f6a7-cda1-47c2-8353-fcdee281f31d",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.intel.com",
-          "fingerprint": "firefox",
-          "publicKey": "zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo",
-          "shortId": "186e4c2732d61a3d",
-          "spiderX": ""
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n08",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "35.201.230.136",
-            "port": 443,
-            "users": [
-              {
-                "id": "18eef0d3-35b3-4a5f-97a1-7b5264530dd8",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.cloudflare.com",
-          "fingerprint": "firefox",
-          "publicKey": "Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM",
-          "shortId": "5e13a6d43d0644c9",
-          "spiderX": ""
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n09",
+      "tag": "n04",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -316,7 +168,73 @@
       }
     },
     {
-      "tag": "n10",
+      "tag": "n05",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "35.201.230.136",
+            "port": 443,
+            "users": [
+              {
+                "id": "18eef0d3-35b3-4a5f-97a1-7b5264530dd8",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.cloudflare.com",
+          "fingerprint": "qq",
+          "publicKey": "Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM",
+          "shortId": "5e13a6d43d0644c9",
+          "spiderX": ""
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n06",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "34.81.129.171",
+            "port": 34376,
+            "users": [
+              {
+                "id": "bf8cc771-51a0-4395-810f-1f135325cfc1",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.sony.com",
+          "fingerprint": "random",
+          "publicKey": "Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU",
+          "shortId": "8dbafb690450d8a9",
+          "spiderX": ""
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n07",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -348,16 +266,16 @@
       }
     },
     {
-      "tag": "n11",
+      "tag": "n08",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "35.229.136.113",
-            "port": 35412,
+            "address": "35.194.157.16",
+            "port": 43450,
             "users": [
               {
-                "id": "5d3cbdb2-b82d-4078-82b8-5dd413cca82b",
+                "id": "64d77a12-ad6b-4d85-a349-bd287535af1c",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -371,107 +289,8 @@
         "realitySettings": {
           "serverName": "www.amd.com",
           "fingerprint": "firefox",
-          "publicKey": "eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4",
-          "shortId": "0630b874d595",
-          "spiderX": ""
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n12",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "35.201.163.218",
-            "port": 30837,
-            "users": [
-              {
-                "id": "85a6bd94-83a9-4e80-849f-c06d7011d1a4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.sony.com",
-          "fingerprint": "chrome",
-          "publicKey": "LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo",
-          "shortId": "97101ba788915e5a",
-          "spiderX": ""
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n13",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.199.134.231",
-            "port": 28364,
-            "users": [
-              {
-                "id": "3a62a0c2-ba80-43a9-b757-9aca88b0552e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.sony.com",
-          "fingerprint": "firefox",
-          "publicKey": "NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I",
-          "shortId": "7241c359c2dfab",
-          "spiderX": ""
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n14",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "34.80.164.239",
-            "port": 21776,
-            "users": [
-              {
-                "id": "b0399730-1618-4727-8ddd-2baf94ab90d6",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.tesla.com",
-          "fingerprint": "qq",
-          "publicKey": "nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA",
-          "shortId": "79b6f82800c68925",
+          "publicKey": "HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o",
+          "shortId": "e65d010354bdad73",
           "spiderX": ""
         },
         "sockopt": {
