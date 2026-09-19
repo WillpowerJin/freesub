@@ -4,23 +4,39 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-      "server": "84.32.215.117",
+      "server": "195.238.126.20",
+      "server_port": 9002,
+      "method": "aes-256-cfb",
+      "password": "b8KkNDjEd5QqFyRm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
+      "server": "195.238.126.20",
+      "server_port": 9001,
+      "method": "aes-256-cfb",
+      "password": "UkXRsXvR6buDMG2Y"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe",
+      "server": "lt-vno-3.blook.network",
       "server_port": 443,
-      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+      "uuid": "e230740a-aa30-461a-8bf3-9c8cab6332f7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "lt.aether-runet.top",
+        "server_name": "lt-vno-3.blook.network",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk",
-          "short_id": "4fa44664f6a566d3"
+          "public_key": "XZEwCogwNYSmUTxAvanoSdYCslQJAJcKBewa6-_pWS4",
+          "short_id": "89c919a1"
         }
       }
     },
@@ -29,14 +45,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
