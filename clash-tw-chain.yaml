@@ -96,73 +96,7 @@ proxies:
     headers:
       Host: yx.jinjin909.ggff.net
   ip-version: ipv4
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 162.159.48.32
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  ip-version: ipv4
-  dialer-proxy: 前置选择
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  server: 36.224.141.124
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: 104.199.134.231
-  port: 28364
-  udp: true
-  type: vless
-  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
-    short-id: 7241c359c2dfab
-  servername: www.sony.com
-  client-fingerprint: firefox
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  server: 34.81.223.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
-  tls: true
-  reality-opts:
-    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
-    short-id: d74a6321deec9f31
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  server: 35.194.157.16
-  port: 43450
-  udp: true
-  type: vless
-  uuid: 64d77a12-ad6b-4d85-a349-bd287535af1c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
-    short-id: e65d010354bdad73
-  servername: www.amd.com
-  client-fingerprint: chrome
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
   server: 35.201.163.218
   port: 30837
   udp: true
@@ -174,10 +108,10 @@ proxies:
     public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
     short-id: 97101ba788915e5a
   servername: www.sony.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
   ip-version: ipv4
   dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   server: 60.248.219.78
   port: 443
   udp: true
@@ -193,7 +127,51 @@ proxies:
       Host: ty986gfazs.cainiaohub.xyz
   ip-version: ipv4
   dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 09 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  server: 35.194.157.16
+  port: 43450
+  udp: true
+  type: vless
+  uuid: 64d77a12-ad6b-4d85-a349-bd287535af1c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
+    short-id: e65d010354bdad73
+  servername: www.amd.com
+  client-fingerprint: firefox
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+  server: 34.81.223.1
+  port: 443
+  udp: true
+  type: vless
+  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
+  tls: true
+  reality-opts:
+    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
+    short-id: d74a6321deec9f31
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
+  server: 104.199.134.231
+  port: 28364
+  udp: true
+  type: vless
+  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
+    short-id: 7241c359c2dfab
+  servername: www.sony.com
+  client-fingerprint: random
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
   server: 35.221.158.209
   port: 32981
   udp: true
@@ -205,7 +183,7 @@ proxies:
     public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
     short-id: 70f4b7a4c40636
   servername: www.sony.com
-  client-fingerprint: firefox
+  client-fingerprint: random
   ip-version: ipv4
   dialer-proxy: 前置选择
 proxy-providers:
@@ -229,7 +207,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1790179513
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1790197556
     interval: 21600
     proxy: DIRECT
     header:
@@ -273,16 +251,6 @@ proxy-groups:
   use:
   - 前置订阅
   exclude-filter: Trojan
-- name: 家宽自动
-  type: url-test
-  url: http://www.gstatic.com/generate_204
-  interval: 30
-  timeout: 2000
-  max-failed-times: 2
-  tolerance: 150
-  lazy: false
-  proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 - name: 台湾自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -293,12 +261,11 @@ proxy-groups:
   lazy: false
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 09 - xiaohe
 - name: 全部自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -315,18 +282,15 @@ proxy-groups:
 - name: PROXIES
   type: select
   proxies:
-  - 家宽自动
   - 台湾自动
   - 全部自动
   - 前置自动
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 09 - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
 - DOMAIN-SUFFIX,090227.xyz,DIRECT
