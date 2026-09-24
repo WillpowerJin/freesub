@@ -105,50 +105,6 @@ proxies:
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   ip-version: ipv4
   dialer-proxy: 前置选择
-- name: 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
-  server: 116.204.164.17
-  port: 7443
-  udp: true
-  type: vless
-  uuid: ef8907eb-8bb5-4735-80f2-1d0068500d95
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
-  server: 211.48.30.184
-  port: 30017
-  udp: true
-  type: vless
-  uuid: beec57a5-8266-4279-b279-f495bdc70699
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  server: 165.154.195.38
-  port: 35034
-  udp: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  ip-version: ipv4
-  dialer-proxy: 前置选择
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: 60.248.219.78
   port: 443
@@ -166,18 +122,18 @@ proxies:
   ip-version: ipv4
   dialer-proxy: 前置选择
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  server: 104.199.134.231
-  port: 28364
+  server: 35.221.158.209
+  port: 32981
   udp: true
   type: vless
-  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
+  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
-    short-id: 7241c359c2dfab
+    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
+    short-id: 70f4b7a4c40636
   servername: www.sony.com
-  client-fingerprint: random
+  client-fingerprint: qq
   ip-version: ipv4
   dialer-proxy: 前置选择
 - name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
@@ -192,51 +148,22 @@ proxies:
     public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
     short-id: e65d010354bdad73
   servername: www.amd.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   ip-version: ipv4
   dialer-proxy: 前置选择
 - name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
-  server: 35.201.163.218
-  port: 30837
+  server: 104.199.134.231
+  port: 28364
   udp: true
   type: vless
-  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
-    short-id: 97101ba788915e5a
+    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
+    short-id: 7241c359c2dfab
   servername: www.sony.com
-  client-fingerprint: random
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
-  server: 34.81.223.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
-  tls: true
-  reality-opts:
-    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
-    short-id: d74a6321deec9f31
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 08 - xiaohe
-  server: 35.221.158.209
-  port: 32981
-  udp: true
-  type: vless
-  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
-    short-id: 70f4b7a4c40636
-  servername: www.sony.com
-  client-fingerprint: random
+  client-fingerprint: firefox
   ip-version: ipv4
   dialer-proxy: 前置选择
 proxy-providers:
@@ -260,7 +187,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1790218791
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1790248097
     interval: 21600
     proxy: DIRECT
     header:
@@ -314,8 +241,6 @@ proxy-groups:
   lazy: false
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
 - name: 台湾自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -326,13 +251,10 @@ proxy-groups:
   lazy: false
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 08 - xiaohe
 - name: 全部自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -354,15 +276,10 @@ proxy-groups:
   - 全部自动
   - 前置自动
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 08 - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
 - DOMAIN-SUFFIX,090227.xyz,DIRECT
