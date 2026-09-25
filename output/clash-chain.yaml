@@ -96,16 +96,41 @@ proxies:
     headers:
       Host: yx.jinjin909.ggff.net
   ip-version: ipv4
-- name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  server: 36.224.141.124
-  port: 50099
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  server: 162.159.0.169
+  port: 8080
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   ip-version: ipv4
   dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  server: 118.167.230.191
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: edge
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   server: 104.199.134.231
   port: 28364
   udp: true
@@ -120,22 +145,7 @@ proxies:
   client-fingerprint: firefox
   ip-version: ipv4
   dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  server: 35.194.157.16
-  port: 43450
-  udp: true
-  type: vless
-  uuid: 64d77a12-ad6b-4d85-a349-bd287535af1c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
-    short-id: e65d010354bdad73
-  servername: www.amd.com
-  client-fingerprint: random
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
   server: 35.221.158.209
   port: 32981
   udp: true
@@ -147,25 +157,7 @@ proxies:
     public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
     short-id: 70f4b7a4c40636
   servername: www.sony.com
-  client-fingerprint: firefox
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
-  server: 61.223.124.196
-  port: 443
-  udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 24864168545164.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 24864168545164.oylfmxz.cn
+  client-fingerprint: safari
   ip-version: ipv4
   dialer-proxy: 前置选择
 proxy-providers:
@@ -189,7 +181,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1790334464
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1790353757
     interval: 21600
     proxy: DIRECT
     header:
@@ -233,6 +225,18 @@ proxy-groups:
   use:
   - 前置订阅
   exclude-filter: Trojan
+- name: 家宽自动
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 30
+  timeout: 2000
+  max-failed-times: 2
+  tolerance: 150
+  lazy: false
+  proxies:
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 - name: 台湾自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -242,11 +246,9 @@ proxy-groups:
   tolerance: 150
   lazy: false
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
 - name: 全部自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -263,14 +265,16 @@ proxy-groups:
 - name: PROXIES
   type: select
   proxies:
+  - 家宽自动
   - 台湾自动
   - 全部自动
   - 前置自动
-  - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
 - DOMAIN-SUFFIX,090227.xyz,DIRECT
