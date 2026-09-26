@@ -43,8 +43,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "162.159.43.187",
-            "port": 2052,
+            "address": "188.114.97.6",
+            "port": 2082,
             "users": [
               {
                 "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
@@ -57,9 +57,9 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/?ed=2560security=tls ",
+          "path": "/",
           "headers": {
-            "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+            "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
           }
         },
         "sockopt": {
@@ -69,55 +69,6 @@
     },
     {
       "tag": "n02",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.52.6",
-            "port": 2095,
-            "users": [
-              {
-                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/?ed=2560security=tls",
-          "headers": {
-            "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-          }
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n03",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "36.224.141.124",
-            "port": 50099,
-            "method": "chacha20-ietf-poly1305",
-            "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-          }
-        ]
-      },
-      "streamSettings": {
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n04",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -141,7 +92,98 @@
       }
     },
     {
+      "tag": "n03",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "namrcg001640lrm.cybervena.com",
+            "port": 50099,
+            "method": "chacha20-ietf-poly1305",
+            "password": "7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56"
+          }
+        ]
+      },
+      "streamSettings": {
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n04",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "5.75.195.83",
+            "port": 56879,
+            "users": [
+              {
+                "id": "f8847ac2-e586-400f-841b-00081ea4592e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "chrome"
+        },
+        "wsSettings": {
+          "path": "/@Marisa_kristi",
+          "headers": {
+            "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
       "tag": "n05",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "83.147.216.223",
+            "port": 4433,
+            "users": [
+              {
+                "id": "660174a2-d32d-4521-840d-d1853bfc80b8",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "chrome"
+        },
+        "wsSettings": {
+          "path": "/@Marisa_kristi",
+          "headers": {
+            "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n06",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -162,7 +204,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "addons.mozilla.org",
-          "fingerprint": "edge",
+          "fingerprint": "firefox",
           "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
           "shortId": "",
           "spiderX": ""
@@ -173,51 +215,18 @@
       }
     },
     {
-      "tag": "n06",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "35.194.157.16",
-            "port": 43450,
-            "users": [
-              {
-                "id": "64d77a12-ad6b-4d85-a349-bd287535af1c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.amd.com",
-          "fingerprint": "chrome",
-          "publicKey": "HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o",
-          "shortId": "e65d010354bdad73",
-          "spiderX": ""
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
       "tag": "n07",
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "35.201.163.218",
-            "port": 30837,
+            "address": "165.154.195.38",
+            "port": 35034,
             "users": [
               {
-                "id": "85a6bd94-83a9-4e80-849f-c06d7011d1a4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+                "alterId": 0,
+                "security": "auto"
               }
             ]
           }
@@ -225,14 +234,6 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.sony.com",
-          "fingerprint": "firefox",
-          "publicKey": "LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo",
-          "shortId": "97101ba788915e5a",
-          "spiderX": ""
-        },
         "sockopt": {
           "dialerProxy": "front-cm"
         }
@@ -244,27 +245,29 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.199.134.231",
-            "port": 28364,
+            "address": "60.248.219.78",
+            "port": 443,
             "users": [
               {
-                "id": "3a62a0c2-ba80-43a9-b757-9aca88b0552e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.sony.com",
-          "fingerprint": "firefox",
-          "publicKey": "NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I",
-          "shortId": "7241c359c2dfab",
-          "spiderX": ""
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ty986gfazs.cainiaohub.xyz",
+          "allowInsecure": true
+        },
+        "wsSettings": {
+          "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
+          "headers": {
+            "Host": "ty986gfazs.cainiaohub.xyz"
+          }
         },
         "sockopt": {
           "dialerProxy": "front-cm"
@@ -294,9 +297,75 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "www.sony.com",
-          "fingerprint": "firefox",
+          "fingerprint": "random",
           "publicKey": "JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E",
           "shortId": "70f4b7a4c40636",
+          "spiderX": ""
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n10",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "35.201.163.218",
+            "port": 30837,
+            "users": [
+              {
+                "id": "85a6bd94-83a9-4e80-849f-c06d7011d1a4",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.sony.com",
+          "fingerprint": "chrome",
+          "publicKey": "LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo",
+          "shortId": "97101ba788915e5a",
+          "spiderX": ""
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n11",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "35.194.157.16",
+            "port": 43450,
+            "users": [
+              {
+                "id": "64d77a12-ad6b-4d85-a349-bd287535af1c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.amd.com",
+          "fingerprint": "random",
+          "publicKey": "HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o",
+          "shortId": "e65d010354bdad73",
           "spiderX": ""
         },
         "sockopt": {
