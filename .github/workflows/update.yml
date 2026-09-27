@@ -41,6 +41,16 @@ jobs:
         env:
           PYTHONUNBUFFERED: '1'
 
+      - name: Refresh cfnew Clash subscription
+        continue-on-error: true
+        run: |
+          if curl -fL --retry 3 --retry-all-errors -m 90 -A 'clash-verge' -o cfnew-clash.yaml.tmp https://v1.mk/Mpmludu; then
+            mv cfnew-clash.yaml.tmp cfnew-clash.yaml
+          else
+            echo "cfnew 短链拉取失败，保留仓库里的旧文件"
+            rm -f cfnew-clash.yaml.tmp
+          fi
+
       - name: Upload test artifacts (调试用, 7天保留)
         uses: actions/upload-artifact@v4
         if: always()
@@ -55,7 +65,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A output/ README.md clash-tw-chain.yaml
+          git add -A output/ README.md clash-tw-chain.yaml cfnew-clash.yaml
           if git diff --staged --quiet; then
             echo "没有节点变动与内容更新。"
           else
