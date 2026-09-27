@@ -2336,18 +2336,6 @@ def update_readme(total_count, res_count):
 
 ---
 
-## ☁️ cfnew Clash（自动测速）
-
-> 内容来自短链 `https://v1.mk/Mpmludu`（ACL4SSR 自动测速模板）。**♻️ 自动选择** 每 300 秒测一次，容差 50 毫秒。导入后把 **🚀 节点选择** 选成 **♻️ 自动选择**。
-> 日本 / 美国 / 新加坡 / 台湾 / 韩国地区组可能只剩 DIRECT（节点名里夹了不可见字符）。香港组能匹配名字里连续写着 HKG 的节点。平时用自动选择。
-> Actions 每 6 小时重新拉取短链并覆盖 `cfnew-clash.yaml`。
-
-| 客户端 | 免翻 CDN | 官方 Raw |
-| :--- | :--- | :--- |
-| **Clash Meta** | [CDN](https://cdn.jsdelivr.net/gh/{repo_name}@main/cfnew-clash.yaml?v={cache_bust}) | [Raw](https://raw.githubusercontent.com/{repo_name}/main/cfnew-clash.yaml) |
-
----
-
 ## 📌 全部节点总订阅链接
 
 | 客户端 / 格式类型 | 节点总数 | 免翻 CDN 订阅直链 (国内直连) | 官方原生 Raw 直链 (开启代理) |
