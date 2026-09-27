@@ -96,40 +96,20 @@ proxies:
     headers:
       Host: yx.jinjin909.ggff.net
   ip-version: ipv4
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  server: 118.167.230.191
+  port: 24215
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  server: 36.224.141.124
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: 60.248.219.78
-  port: 443
-  udp: true
-  type: vless
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
   tls: true
-  servername: ty986gfazs.cainiaohub.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: safari
   ip-version: ipv4
   dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   server: 35.194.157.16
   port: 43450
   udp: true
@@ -144,7 +124,7 @@ proxies:
   client-fingerprint: chrome
   ip-version: ipv4
   dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: 35.221.158.209
   port: 32981
   udp: true
@@ -156,7 +136,23 @@ proxies:
     public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
     short-id: 70f4b7a4c40636
   servername: www.sony.com
-  client-fingerprint: random
+  client-fingerprint: qq
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+  server: 60.248.219.78
+  port: 443
+  udp: true
+  type: vless
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  tls: true
+  servername: ty986gfazs.cainiaohub.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
   ip-version: ipv4
   dialer-proxy: 前置选择
 proxy-providers:
@@ -180,7 +176,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1790508431
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1790526173
     interval: 21600
     proxy: DIRECT
     header:
@@ -233,7 +229,7 @@ proxy-groups:
   tolerance: 150
   lazy: false
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
 - name: 台湾自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -243,10 +239,10 @@ proxy-groups:
   tolerance: 150
   lazy: false
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
 - name: 全部自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -267,11 +263,10 @@ proxy-groups:
   - 台湾自动
   - 全部自动
   - 前置自动
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
 - DOMAIN-SUFFIX,090227.xyz,DIRECT
