@@ -39,6 +39,42 @@
   "outbounds": [
     {
       "tag": "n01",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.174.164",
+            "port": 443,
+            "users": [
+              {
+                "id": "73796e63-0000-4000-8000-000000000000",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "wireguard.ahmad-kh5716.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "chrome"
+        },
+        "wsSettings": {
+          "path": "/sync",
+          "headers": {
+            "Host": "wireguard.ahmad-kh5716.workers.dev"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n02",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -57,12 +93,12 @@
       }
     },
     {
-      "tag": "n02",
+      "tag": "n03",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "82.47.63.156",
+            "address": "test.keoplentuio.xyz",
             "port": 2053,
             "users": [
               {
@@ -81,7 +117,7 @@
       }
     },
     {
-      "tag": "n03",
+      "tag": "n04",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -113,7 +149,32 @@
       }
     },
     {
-      "tag": "n04",
+      "tag": "n05",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "165.154.195.38",
+            "port": 35034,
+            "users": [
+              {
+                "id": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n06",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -135,7 +196,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "www.amd.com",
-          "fingerprint": "firefox",
+          "fingerprint": "chrome",
           "publicKey": "HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o",
           "shortId": "e65d010354bdad73",
           "spiderX": ""
