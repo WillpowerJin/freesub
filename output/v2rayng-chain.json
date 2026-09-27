@@ -43,7 +43,67 @@
       "settings": {
         "vnext": [
           {
-            "address": "118.167.230.191",
+            "address": "188.114.97.6",
+            "port": 2082,
+            "users": [
+              {
+                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n02",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "162.159.43.187",
+            "port": 2086,
+            "users": [
+              {
+                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/?ed=2560security=tls",
+          "headers": {
+            "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n03",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hinet1.2yly.com",
             "port": 24215,
             "users": [
               {
@@ -59,7 +119,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "addons.mozilla.org",
-          "fingerprint": "safari",
+          "fingerprint": "chrome",
           "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
           "shortId": "",
           "spiderX": ""
@@ -70,7 +130,7 @@
       }
     },
     {
-      "tag": "n02",
+      "tag": "n04",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -103,7 +163,7 @@
       }
     },
     {
-      "tag": "n03",
+      "tag": "n05",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -125,7 +185,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "www.sony.com",
-          "fingerprint": "qq",
+          "fingerprint": "ios",
           "publicKey": "JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E",
           "shortId": "70f4b7a4c40636",
           "spiderX": ""
@@ -136,7 +196,7 @@
       }
     },
     {
-      "tag": "n04",
+      "tag": "n06",
       "protocol": "vless",
       "settings": {
         "vnext": [
