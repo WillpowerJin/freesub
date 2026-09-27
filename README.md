@@ -171,3 +171,7 @@ export default {
 下面这条不走本仓库的家宽、前置链式和国家节点，Actions 也不会改它。Clash 订阅短链，测速间隔 180 秒。导入后把 **🚀 节点选择** 选成 **♻️ 自动选择**。
 
 https://v1.mk/eweumE6
+
+测速间隔改这个模板里 `generate_204` 后面的秒数（现在是 `180`），保存后再更新订阅：
+
+https://gist.github.com/WillpowerJin/c434d2de8ba3b60cd44db67486d6f505
