@@ -2430,6 +2430,14 @@ export default {{
 1. **自动更新机制**：GitHub Actions 每 6 小时全自动运行并刷新上述全部订阅与数据。
 2. **测活标准**：节点必须通过 ① 端口预检 ② sing-box 实际隧道 3 个 generate_204 探测 ③ 真实出口 IP 穿透获取 ④ Cloudflare 5MB 限时下载 (吞吐 ≥ 70KB/s) ⑤ TLS 证书校验非 MITM, 方可入库。
 3. **多客户端兼容**：Clash / v2rayN / sing-box 全格式订阅。
+
+---
+
+## 📺 cfnew Clash（与家宽 / 前置无关）
+
+下面这条不走本仓库的家宽、前置链式和国家节点，Actions 也不会改它。Clash 订阅短链，测速间隔 180 秒。导入后把 **🚀 节点选择** 选成 **♻️ 自动选择**。
+
+https://v1.mk/eweumE6
 """
     with open(os.path.join(BASEDIR, "README.md"), "w", encoding="utf-8") as f:
         f.write(readme)
