@@ -29,6 +29,17 @@ proxies:
   skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  server: 94.183.170.135
   port: 8443
   udp: true
   type: vless
@@ -36,7 +47,7 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +56,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +65,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
 rules:
 - MATCH,PROXIES

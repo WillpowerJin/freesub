@@ -43,8 +43,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.64.52.6",
-            "port": 2095,
+            "address": "162.159.39.218",
+            "port": 8080,
             "users": [
               {
                 "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
@@ -57,7 +57,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/?ed=2560security=tls",
+          "path": "/?ed=2560security=tlssecurity=tls",
           "headers": {
             "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
           }
@@ -69,38 +69,6 @@
     },
     {
       "tag": "n02",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "hinet1.2yly.com",
-            "port": 24215,
-            "users": [
-              {
-                "id": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "addons.mozilla.org",
-          "fingerprint": "chrome",
-          "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "shortId": "",
-          "spiderX": ""
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n03",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -125,7 +93,7 @@
       }
     },
     {
-      "tag": "n04",
+      "tag": "n03",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -153,38 +121,6 @@
           "headers": {
             "Host": "ty986gfazs.cainiaohub.xyz"
           }
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n05",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "35.201.181.122",
-            "port": 443,
-            "users": [
-              {
-                "id": "22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.cloudflare.com",
-          "fingerprint": "ios",
-          "publicKey": "PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0",
-          "shortId": "32f66f37df3f58d2",
-          "spiderX": ""
         },
         "sockopt": {
           "dialerProxy": "front-cm"
