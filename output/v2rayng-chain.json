@@ -39,36 +39,6 @@
   "outbounds": [
     {
       "tag": "n01",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "162.159.43.187",
-            "port": 2052,
-            "users": [
-              {
-                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/?ed=2560security=tls",
-          "headers": {
-            "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-          }
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n02",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -93,7 +63,7 @@
       }
     },
     {
-      "tag": "n03",
+      "tag": "n02",
       "protocol": "vless",
       "settings": {
         "vnext": [
