@@ -39,6 +39,36 @@
   "outbounds": [
     {
       "tag": "n01",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.64.42.85",
+            "port": 8080,
+            "users": [
+              {
+                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/?ed=2560security=tls ",
+          "headers": {
+            "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n02",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -63,16 +93,16 @@
       }
     },
     {
-      "tag": "n02",
+      "tag": "n03",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "60.248.219.78",
+            "address": "35.201.181.122",
             "port": 443,
             "users": [
               {
-                "id": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
+                "id": "22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2",
                 "encryption": "none"
               }
             ]
@@ -80,17 +110,14 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ty986gfazs.cainiaohub.xyz",
-          "allowInsecure": true
-        },
-        "wsSettings": {
-          "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
-          "headers": {
-            "Host": "ty986gfazs.cainiaohub.xyz"
-          }
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.cloudflare.com",
+          "fingerprint": "ios",
+          "publicKey": "PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0",
+          "shortId": "32f66f37df3f58d2",
+          "spiderX": ""
         },
         "sockopt": {
           "dialerProxy": "front-cm"
