@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.64.229.2",
-            "port": 2082,
+            "address": "hinet1.2yly.com",
+            "port": 24215,
             "users": [
               {
-                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+                "id": "19d5a678-8396-4e3b-93da-ece618d0e83a",
                 "encryption": "none"
               }
             ]
@@ -55,12 +55,14 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/?ed=2560security=tls",
-          "headers": {
-            "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-          }
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "addons.mozilla.org",
+          "fingerprint": "chrome",
+          "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "shortId": "",
+          "spiderX": ""
         },
         "sockopt": {
           "dialerProxy": "front-cm"
@@ -94,38 +96,6 @@
     },
     {
       "tag": "n03",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "35.201.181.122",
-            "port": 443,
-            "users": [
-              {
-                "id": "22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.cloudflare.com",
-          "fingerprint": "ios",
-          "publicKey": "PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0",
-          "shortId": "32f66f37df3f58d2",
-          "spiderX": ""
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n04",
       "protocol": "vless",
       "settings": {
         "vnext": [
