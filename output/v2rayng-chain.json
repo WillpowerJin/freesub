@@ -39,18 +39,29 @@
   "outbounds": [
     {
       "tag": "n01",
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "154.86.30.45",
-            "port": 24443,
-            "method": "aes-128-gcm",
-            "password": "bKgENdAl@8Zx3lAc-HK-BD-20260622"
+            "address": "104.18.39.218",
+            "port": 2082,
+            "users": [
+              {
+                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+                "encryption": "none"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/?ed=2560security=tls",
+          "headers": {
+            "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          }
+        },
         "sockopt": {
           "dialerProxy": "front-cm"
         }
@@ -62,11 +73,71 @@
       "settings": {
         "vnext": [
           {
-            "address": "test.keoplentuio.xyz",
-            "port": 2053,
+            "address": "104.18.47.113",
+            "port": 8080,
             "users": [
               {
-                "id": "9ef61079-6f7d-4911-9608-943da85d8e6f",
+                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/?ed=2560security=tls",
+          "headers": {
+            "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n03",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.18.34.14",
+            "port": 2082,
+            "users": [
+              {
+                "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/?ed=2560security=tls",
+          "headers": {
+            "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n04",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hinet1.2yly.com",
+            "port": 24215,
+            "users": [
+              {
+                "id": "19d5a678-8396-4e3b-93da-ece618d0e83a",
                 "encryption": "none"
               }
             ]
@@ -75,13 +146,50 @@
       },
       "streamSettings": {
         "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "addons.mozilla.org",
+          "fingerprint": "chrome",
+          "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "shortId": "",
+          "spiderX": ""
+        },
         "sockopt": {
           "dialerProxy": "front-cm"
         }
       }
     },
     {
-      "tag": "n03",
+      "tag": "n05",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hi.northcluster.info",
+            "port": 52300,
+            "users": [
+              {
+                "id": "6e571484-4166-4699-8f58-b34a1823691f",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/video",
+          "headers": {}
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n06",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -106,7 +214,7 @@
       }
     },
     {
-      "tag": "n04",
+      "tag": "n07",
       "protocol": "vless",
       "settings": {
         "vnext": [
