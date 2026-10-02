@@ -27,18 +27,32 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  server: 212.227.235.66
-  port: 2053
+  server: 193.238.154.5
+  port: 443
   udp: true
   type: vless
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
+  tls: true
+  servername: assets-es.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-    short-id: 29e8dcd2b37aaa7f
-  servername: www.apple.com
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
   server: mygptagent.org
   port: 443
   udp: true
@@ -52,18 +66,8 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  server: 34.175.44.113
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0b4b1548-c7ca-45a5-9096-6c3cc4b1c43b
-  tls: true
-  reality-opts:
-    public-key: iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0
-    short-id: fe85cb6a5c84e64c
-  servername: www.cloudflare.com
-  client-fingerprint: ios
+    headers:
+      Host: mygptagent.org
 proxy-groups:
 - name: PROXIES
   type: select
