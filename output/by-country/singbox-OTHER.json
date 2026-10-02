@@ -5,14 +5,21 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-      "server": "109.110.162.40",
-      "server_port": 23005,
-      "password": "fac593ac-d6aa-4523-bea9-b3eb2a2b3da3",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.16.71.213",
+      "server_port": 443,
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "82.yuanul.com",
+        "server_name": "www.calmlunch.com",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
       }
     },
     {
@@ -20,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
