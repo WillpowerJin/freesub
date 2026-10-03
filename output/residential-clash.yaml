@@ -4,56 +4,63 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: f8524129-tmm5c0-tn28ki-mv7m.hk3.hyhuawei.com
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  server: 162.159.48.32
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  server: tw6.dexlos.com
+  port: 8080
+  udp: true
+  type: tuic
+  uuid: D7286728-678E-443B-B76B-B699654C66DD
+  password: D7286728-678E-443B-B76B-B699654C66DD
+  sni: tw6.dexlos.com
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  server: 39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 94d40708-8273-11ea-8fc9-f23c913c8d2b
-  sni: f8524129-tmm5c0-tn28ki-mv7m.hk3.hyhuawei.com
+  password: 367e233c-2f54-11ee-9ae1-f23c9164ca5d
+  sni: 39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: 62a43558-tmm5c0-trdynx-1rk9y.nw4.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  server: 971746e8-tmm5c0-trpvht-1ey07.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 88f6e3c4-1d01-11ef-812c-f23c91cfbbc9
-  sni: 62a43558-tmm5c0-trdynx-1rk9y.nw4.hyhuawei.com
+  password: 203d1d64-3313-11ed-bb74-f23c9164ca5d
+  sni: 971746e8-tmm5c0-trpvht-1ey07.nw4.hyhuawei.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  server: 118.167.235.241
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  server: 178.83.46.216
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
