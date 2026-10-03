@@ -96,19 +96,6 @@ proxies:
     headers:
       Host: yx.jinjin909.ggff.net
   ip-version: ipv4
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 172.64.158.146
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  ip-version: ipv4
-  dialer-proxy: 前置选择
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   server: 118.167.235.241
   port: 24215
@@ -122,12 +109,22 @@ proxies:
   client-fingerprint: firefox
   ip-version: ipv4
   dialer-proxy: 前置选择
-- name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+  server: 178.83.46.216
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
+  server: 165.154.195.38
+  port: 35034
+  udp: true
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   ip-version: ipv4
   dialer-proxy: 前置选择
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
@@ -144,16 +141,6 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  server: 165.154.195.38
-  port: 35034
-  udp: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
   ip-version: ipv4
   dialer-proxy: 前置选择
 proxy-providers:
@@ -177,7 +164,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1790978254
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1790999046
     interval: 21600
     proxy: DIRECT
     header:
@@ -230,9 +217,8 @@ proxy-groups:
   tolerance: 150
   lazy: false
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
 - name: 台湾自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -243,8 +229,8 @@ proxy-groups:
   lazy: false
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 - name: 全部自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -265,12 +251,11 @@ proxy-groups:
   - 台湾自动
   - 全部自动
   - 前置自动
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
 - DOMAIN-SUFFIX,090227.xyz,DIRECT
