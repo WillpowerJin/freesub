@@ -16,7 +16,7 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: firefox
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: 104.20.36.205
+  server: argo6.5671234.xyz
   port: 443
   udp: true
   type: vless
@@ -24,6 +24,7 @@ proxies:
   tls: true
   servername: argo6.5671234.xyz
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /e8e2cecb6188f7fb
