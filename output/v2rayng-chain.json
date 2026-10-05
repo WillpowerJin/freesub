@@ -43,8 +43,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.18.34.14",
-            "port": 2095,
+            "address": "172.64.42.85",
+            "port": 2052,
             "users": [
               {
                 "id": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
@@ -57,7 +57,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/",
+          "path": "/?ed=2560security=tls",
           "headers": {
             "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
           }
@@ -73,13 +73,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "31.77.227.6",
-            "port": 52006,
+            "address": "hinet1.2yly.com",
+            "port": 24215,
             "users": [
               {
-                "id": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+                "encryption": "none"
               }
             ]
           }
@@ -87,10 +86,13 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "bigdick.gamegrow.ru",
-          "allowInsecure": false
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "addons.mozilla.org",
+          "fingerprint": "chrome",
+          "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "shortId": "",
+          "spiderX": ""
         },
         "sockopt": {
           "dialerProxy": "front-cm"
@@ -135,6 +137,60 @@
     },
     {
       "tag": "n04",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "test.keoplentuio.xyz",
+            "port": 2053,
+            "users": [
+              {
+                "id": "9ef61079-6f7d-4911-9608-943da85d8e6f",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n05",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "31.77.227.6",
+            "port": 52006,
+            "users": [
+              {
+                "id": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "bigdick.gamegrow.ru",
+          "allowInsecure": false
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n06",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -159,7 +215,7 @@
       }
     },
     {
-      "tag": "n05",
+      "tag": "n07",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -187,6 +243,38 @@
           "headers": {
             "Host": "ty986gfazs.cainiaohub.xyz"
           }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n08",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "130.211.240.128",
+            "port": 443,
+            "users": [
+              {
+                "id": "31a40f42-4ad6-4a32-a760-71102b459584",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.cloudflare.com",
+          "fingerprint": "qq",
+          "publicKey": "qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg",
+          "shortId": "d74a6321deec9f31",
+          "spiderX": ""
         },
         "sockopt": {
           "dialerProxy": "front-cm"
