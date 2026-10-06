@@ -6,39 +6,39 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-      "server": "172.66.44.124",
-      "server_port": 8443,
-      "uuid": "b2f2f9f2-1864-48ea-839b-22815faff1f1",
+      "server": "45.9.118.101",
+      "server_port": 443,
+      "uuid": "44730b65-24d5-45f2-8b45-8be24015d1b9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "sellflow.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev"
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
         }
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-      "server": "srv-17e124.21freedom.net",
-      "server_port": 11592,
-      "password": "41edb44c8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-17e124.21freedom.net",
-        "insecure": true
-      }
+      "server": "194.38.11.86",
+      "server_port": 65443,
+      "method": "aes-256-cfb",
+      "password": "7eadc6dbe2ae"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
     },
     {
       "type": "selector",
@@ -46,7 +46,8 @@
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe"
       ]
     },
     {
@@ -54,7 +55,8 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
