@@ -96,7 +96,25 @@ proxies:
     headers:
       Host: yx.jinjin909.ggff.net
   ip-version: ipv4
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
+  server: 165.154.195.38
+  port: 35034
+  udp: true
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: 60.248.219.78
   port: 443
   udp: true
@@ -133,7 +151,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1791376772
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1791412895
     interval: 21600
     proxy: DIRECT
     header:
@@ -177,6 +195,16 @@ proxy-groups:
   use:
   - 前置订阅
   exclude-filter: Trojan
+- name: 家宽自动
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 30
+  timeout: 2000
+  max-failed-times: 2
+  tolerance: 150
+  lazy: false
+  proxies:
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe
 - name: 台湾自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -186,7 +214,8 @@ proxy-groups:
   tolerance: 150
   lazy: false
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
 - name: 全部自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -203,10 +232,13 @@ proxy-groups:
 - name: PROXIES
   type: select
   proxies:
+  - 家宽自动
   - 台湾自动
   - 全部自动
   - 前置自动
-  - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
 - DOMAIN-SUFFIX,090227.xyz,DIRECT
