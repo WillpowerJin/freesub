@@ -96,35 +96,6 @@ proxies:
     headers:
       Host: yx.jinjin909.ggff.net
   ip-version: ipv4
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  server: 61.230.162.88
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: safari
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: 60.248.219.78
-  port: 443
-  udp: true
-  type: vless
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  tls: true
-  servername: ty986gfazs.cainiaohub.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-  ip-version: ipv4
-  dialer-proxy: 前置选择
 proxy-providers:
   前置订阅:
     type: http
@@ -146,7 +117,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1791519751
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1791549364
     interval: 21600
     proxy: DIRECT
     header:
@@ -190,27 +161,6 @@ proxy-groups:
   use:
   - 前置订阅
   exclude-filter: Trojan
-- name: 家宽自动
-  type: url-test
-  url: http://www.gstatic.com/generate_204
-  interval: 30
-  timeout: 2000
-  max-failed-times: 2
-  tolerance: 150
-  lazy: false
-  proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-- name: 台湾自动
-  type: url-test
-  url: http://www.gstatic.com/generate_204
-  interval: 30
-  timeout: 2000
-  max-failed-times: 2
-  tolerance: 150
-  lazy: false
-  proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
 - name: 全部自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -227,12 +177,8 @@ proxy-groups:
 - name: PROXIES
   type: select
   proxies:
-  - 家宽自动
-  - 台湾自动
   - 全部自动
   - 前置自动
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
 - DOMAIN-SUFFIX,090227.xyz,DIRECT
