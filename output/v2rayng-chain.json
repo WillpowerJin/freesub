@@ -43,30 +43,27 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.96.3",
-            "port": 2087,
+            "address": "fsjp19.46852.top",
+            "port": 13459,
             "users": [
               {
-                "id": "756e8f39-04e8-436d-b5c6-905d37d9562c",
-                "encryption": "none"
+                "id": "1b0ef044-585e-4b57-ab38-8b97e4eef8fa",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "Ez-98919A.MOtoRicb.Workers.DeV",
-          "allowInsecure": false,
-          "fingerprint": "chrome"
-        },
-        "wsSettings": {
-          "path": "/eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ",
-          "headers": {
-            "Host": "ez-98919a.motoricb.workers.dev"
-          }
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "cloudflare.com",
+          "fingerprint": "ios",
+          "publicKey": "hNCjtGGnj9dBM_b9_naRrpaMxW6uPJshmi3cxiKLnnw",
+          "shortId": "b9",
+          "spiderX": ""
         },
         "sockopt": {
           "dialerProxy": "front-cm"
@@ -79,65 +76,27 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.66.47.45",
-            "port": 2083,
+            "address": "fsjp19.46852.top",
+            "port": 13460,
             "users": [
               {
-                "id": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-                "encryption": "none"
+                "id": "1b0ef044-585e-4b57-ab38-8b97e4eef8fa",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "wk1.f1w.de5.net",
-          "allowInsecure": false,
-          "fingerprint": "chrome"
-        },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "wk1.f1w.de5.net"
-          }
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n03",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "60.248.219.78",
-            "port": 443,
-            "users": [
-              {
-                "id": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ty986gfazs.cainiaohub.xyz",
-          "allowInsecure": true
-        },
-        "wsSettings": {
-          "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
-          "headers": {
-            "Host": "ty986gfazs.cainiaohub.xyz"
-          }
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "cloudflare.com",
+          "fingerprint": "ios",
+          "publicKey": "aMWflVU1irMrKvFSbdiD4CwJd7cvHPkjKu7ip9r-EHw",
+          "shortId": "05282fc98fd39400",
+          "spiderX": ""
         },
         "sockopt": {
           "dialerProxy": "front-cm"
