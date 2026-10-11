@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 202.78.163.237
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: pl.golangwikito.cfd
   port: 443
   udp: true
@@ -25,49 +17,8 @@ proxies:
     short-id: f8b695e5c59d028c
   servername: pl.golangwikito.cfd
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: enabling-snipe.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: enabling-snipe.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 31.77.13.19
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: polandsixsebenrkn010.qcloud.surf
-  port: 21384
-  udp: true
-  type: hysteria2
-  password: 6656cc0a-5908-4d04-a436-64f5843c0c7a
-  sni: polandsixsebenrkn010.qcloud.surf
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: pl.illusion-vpn.ru
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b6492f9d-491a-5a05-bbfd-5e3630f94d00
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: CrczD7yTgleZrusuQSxwWtW9UB6xdwLbz-36XUsIf3A
-    short-id: 52c92aac1925af3b
-  servername: pl.illusion-vpn.ru
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  server: pl.flen-vpn.xyz
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 2.26.225.89
   port: 8443
   udp: true
   type: vless
@@ -75,7 +26,41 @@ proxies:
   tls: true
   servername: pl.flen-vpn.xyz
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: 202.78.163.237
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 177.1.192.72
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 177.1.192.74
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
+    short-id: 770618b6
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   server: 91.215.43.248
   port: 443
   udp: true
@@ -90,7 +75,7 @@ proxies:
     path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
       Host: my.kempekl.online
-- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   server: 144.31.49.47
   port: 443
   udp: true
@@ -98,6 +83,42 @@ proxies:
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
+  server: 144.31.101.196
+  port: 33891
+  udp: true
+  type: vless
+  uuid: 1c794e75-bcd4-4a65-9f69-ed0a10f33d60
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw
+    short-id: 5bd7b68ca4c04443
+  servername: browser.yandex.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 10 - xiaohe
+  server: u6.luxcloud.space
+  port: 443
+  udp: true
+  type: vless
+  uuid: fc87e0d6-0f6a-423a-828e-1fed7e7ef29c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: u6.luxcloud.space
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -112,6 +133,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
   - 🇵🇱 波兰 (Poland) 09 - xiaohe
+  - 🇵🇱 波兰 (Poland) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -126,5 +148,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
   - 🇵🇱 波兰 (Poland) 09 - xiaohe
+  - 🇵🇱 波兰 (Poland) 10 - xiaohe
 rules:
 - MATCH,PROXIES

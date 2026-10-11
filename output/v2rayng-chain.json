@@ -39,23 +39,35 @@
   "outbounds": [
     {
       "tag": "n01",
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "test.keoplentuio.xyz",
-            "port": 2053,
+            "address": "24864168545164.d6f54hd1j.cc",
+            "port": 443,
             "users": [
               {
-                "id": "9ef61079-6f7d-4911-9608-943da85d8e6f",
-                "encryption": "none"
+                "id": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
+                "alterId": 0,
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "24864168545164.d6f54hd1j.cc",
+          "allowInsecure": false
+        },
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "24864168545164.d6f54hd1j.cc"
+          }
+        },
         "sockopt": {
           "dialerProxy": "front-cm"
         }
@@ -89,42 +101,6 @@
         "wsSettings": {
           "path": "/",
           "headers": {}
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n03",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "24864168545164.d6f54hd1j.cc",
-            "port": 443,
-            "users": [
-              {
-                "id": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "24864168545164.d6f54hd1j.cc",
-          "allowInsecure": false
-        },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "24864168545164.d6f54hd1j.cc"
-          }
         },
         "sockopt": {
           "dialerProxy": "front-cm"
