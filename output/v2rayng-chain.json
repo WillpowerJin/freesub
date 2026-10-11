@@ -43,13 +43,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "fsjp19.46852.top",
-            "port": 13459,
+            "address": "test.keoplentuio.xyz",
+            "port": 2053,
             "users": [
               {
-                "id": "1b0ef044-585e-4b57-ab38-8b97e4eef8fa",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "9ef61079-6f7d-4911-9608-943da85d8e6f",
+                "encryption": "none"
               }
             ]
           }
@@ -57,14 +56,6 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cloudflare.com",
-          "fingerprint": "ios",
-          "publicKey": "hNCjtGGnj9dBM_b9_naRrpaMxW6uPJshmi3cxiKLnnw",
-          "shortId": "b9",
-          "spiderX": ""
-        },
         "sockopt": {
           "dialerProxy": "front-cm"
         }
@@ -72,31 +63,68 @@
     },
     {
       "tag": "n02",
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "fsjp19.46852.top",
-            "port": 13460,
+            "address": "654168416355441.d6f54hd1j.cc",
+            "port": 443,
             "users": [
               {
-                "id": "1b0ef044-585e-4b57-ab38-8b97e4eef8fa",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
+                "alterId": 0,
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cloudflare.com",
-          "fingerprint": "ios",
-          "publicKey": "aMWflVU1irMrKvFSbdiD4CwJd7cvHPkjKu7ip9r-EHw",
-          "shortId": "05282fc98fd39400",
-          "spiderX": ""
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "654168416355441.d6f54hd1j.cc",
+          "allowInsecure": false
+        },
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n03",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "24864168545164.d6f54hd1j.cc",
+            "port": 443,
+            "users": [
+              {
+                "id": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "24864168545164.d6f54hd1j.cc",
+          "allowInsecure": false
+        },
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "24864168545164.d6f54hd1j.cc"
+          }
         },
         "sockopt": {
           "dialerProxy": "front-cm"

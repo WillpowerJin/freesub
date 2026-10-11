@@ -96,34 +96,46 @@ proxies:
     headers:
       Host: yx.jinjin909.ggff.net
   ip-version: ipv4
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: fsjp19.46852.top
-  port: 13459
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
   type: vless
-  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hNCjtGGnj9dBM_b9_naRrpaMxW6uPJshmi3cxiKLnnw
-    short-id: b9
-  servername: cloudflare.com
-  client-fingerprint: ios
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   ip-version: ipv4
   dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  server: fsjp19.46852.top
-  port: 13460
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  server: 654168416355441.d6f54hd1j.cc
+  port: 443
   udp: true
-  type: vless
-  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: aMWflVU1irMrKvFSbdiD4CwJd7cvHPkjKu7ip9r-EHw
-    short-id: 05282fc98fd39400
-  servername: cloudflare.com
-  client-fingerprint: ios
+  servername: 654168416355441.d6f54hd1j.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  server: 24864168545164.d6f54hd1j.cc
+  port: 443
+  udp: true
+  type: vmess
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 24864168545164.d6f54hd1j.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 24864168545164.d6f54hd1j.cc
   ip-version: ipv4
   dialer-proxy: 前置选择
 proxy-providers:
@@ -147,7 +159,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1791720406
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1791740677
     interval: 21600
     proxy: DIRECT
     header:
@@ -191,6 +203,18 @@ proxy-groups:
   use:
   - 前置订阅
   exclude-filter: Trojan
+- name: 家宽自动
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 30
+  timeout: 2000
+  max-failed-times: 2
+  tolerance: 150
+  lazy: false
+  proxies:
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
 - name: 台湾自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -200,8 +224,8 @@ proxy-groups:
   tolerance: 150
   lazy: false
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
 - name: 全部自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -218,11 +242,14 @@ proxy-groups:
 - name: PROXIES
   type: select
   proxies:
+  - 家宽自动
   - 台湾自动
   - 全部自动
   - 前置自动
-  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
 - DOMAIN-SUFFIX,090227.xyz,DIRECT
