@@ -39,35 +39,23 @@
   "outbounds": [
     {
       "tag": "n01",
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "24864168545164.d6f54hd1j.cc",
-            "port": 443,
+            "address": "test.keoplentuio.xyz",
+            "port": 2053,
             "users": [
               {
-                "id": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
-                "alterId": 0,
-                "security": "auto"
+                "id": "9ef61079-6f7d-4911-9608-943da85d8e6f",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "24864168545164.d6f54hd1j.cc",
-          "allowInsecure": false
-        },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "24864168545164.d6f54hd1j.cc"
-          }
-        },
+        "network": "tcp",
         "sockopt": {
           "dialerProxy": "front-cm"
         }
@@ -101,6 +89,73 @@
         "wsSettings": {
           "path": "/",
           "headers": {}
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n03",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "118.167.248.243",
+            "port": 24215,
+            "users": [
+              {
+                "id": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "addons.mozilla.org",
+          "fingerprint": "firefox",
+          "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "shortId": "",
+          "spiderX": ""
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n04",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "60.248.219.78",
+            "port": 443,
+            "users": [
+              {
+                "id": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ty986gfazs.cainiaohub.xyz",
+          "allowInsecure": true
+        },
+        "wsSettings": {
+          "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
+          "headers": {
+            "Host": "ty986gfazs.cainiaohub.xyz"
+          }
         },
         "sockopt": {
           "dialerProxy": "front-cm"
