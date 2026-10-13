@@ -19,18 +19,14 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 78.135.73.47
-  port: 443
+  server: googol.wookshop.ir
+  port: 17915
   udp: true
   type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
   tls: true
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: chrome
+  servername: googol.wookshop.ir
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
