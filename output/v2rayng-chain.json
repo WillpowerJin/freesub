@@ -64,9 +64,7 @@
         },
         "wsSettings": {
           "path": "/",
-          "headers": {
-            "Host": "fujrdt.d6f54hd1j.cc"
-          }
+          "headers": {}
         },
         "sockopt": {
           "dialerProxy": "front-cm"
@@ -75,6 +73,31 @@
     },
     {
       "tag": "n02",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "165.154.195.38",
+            "port": 35034,
+            "users": [
+              {
+                "id": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n03",
       "protocol": "vless",
       "settings": {
         "vnext": [
