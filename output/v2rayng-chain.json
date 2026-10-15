@@ -39,6 +39,80 @@
   "outbounds": [
     {
       "tag": "n01",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "test.keoplentuio.xyz",
+            "port": 2053,
+            "users": [
+              {
+                "id": "9ef61079-6f7d-4911-9608-943da85d8e6f",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n02",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "62.lwdh.us",
+            "port": 12952,
+            "users": [
+              {
+                "id": "d68fbc96-5187-4b8f-965e-eecd7a699e81",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "62.lwdh.us",
+          "allowInsecure": false,
+          "fingerprint": "edge"
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n03",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "p141.panda001.net",
+            "port": 4652,
+            "method": "aes-256-cfb",
+            "password": "qwerREWQ@@"
+          }
+        ]
+      },
+      "streamSettings": {
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n04",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -64,7 +138,9 @@
         },
         "wsSettings": {
           "path": "/",
-          "headers": {}
+          "headers": {
+            "Host": "fujrdt.d6f54hd1j.cc"
+          }
         },
         "sockopt": {
           "dialerProxy": "front-cm"
@@ -72,7 +148,7 @@
       }
     },
     {
-      "tag": "n02",
+      "tag": "n05",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -97,7 +173,7 @@
       }
     },
     {
-      "tag": "n03",
+      "tag": "n06",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -125,6 +201,36 @@
           "headers": {
             "Host": "ty986gfazs.cainiaohub.xyz"
           }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n07",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "tw.giannaycs.com",
+            "port": 12943,
+            "users": [
+              {
+                "id": "d68fbc96-5187-4b8f-965e-eecd7a699e81",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "tw.giannaycs.com",
+          "allowInsecure": false,
+          "fingerprint": "safari"
         },
         "sockopt": {
           "dialerProxy": "front-cm"
