@@ -59,7 +59,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "addons.mozilla.org",
-          "fingerprint": "qq",
+          "fingerprint": "chrome",
           "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
           "shortId": "",
           "spiderX": ""
