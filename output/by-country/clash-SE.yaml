@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: hy-se.bypassme.online
-  port: 443
+  server: mui.firzav.ir
+  port: 1080
   udp: true
-  type: hysteria2
-  password: e625f8ef-f935-4c7d-a259-0f154b6842fd
-  sni: hy-se.bypassme.online
-  skip-cert-verify: false
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ZJdYmMiJBWkbTZ5nExBRpQ_f7uIG7wL4
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   server: 5.178.109.174
   port: 14430
@@ -37,20 +36,25 @@ proxies:
   servername: swe.wizard.select
   client-fingerprint: qq
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: se1.h1cloud.net
-  port: 26128
+  server: hy-se.bypassme.online
+  port: 443
+  udp: true
+  type: hysteria2
+  password: e625f8ef-f935-4c7d-a259-0f154b6842fd
+  sni: hy-se.bypassme.online
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: edge-lab-b.10media.top
+  port: 443
   udp: true
   type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
   tls: true
-  reality-opts:
-    public-key: sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk
-    short-id: 13ac4d3bdadf1ea1
-  servername: www.icloud.com
-  client-fingerprint: random
+  servername: edge-lab-b.10media.top
+  skip-cert-verify: false
   network: grpc
   grpc-opts:
-    grpc-service-name: df50147201bf
+    grpc-service-name: swedenfeed
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +64,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +74,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
 rules:
 - MATCH,PROXIES
