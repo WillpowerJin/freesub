@@ -4,15 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "32.236.157.157",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-au-001.fastervpn.world",
-        "insecure": true
+      "type": "vless",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
+      "server": "178.172.227.124",
+      "server_port": 14430,
+      "uuid": "1af36694-b548-4b18-89a0-bc076eab4ed7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "178.172.227.124"
+        }
       }
     },
     {
@@ -20,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
