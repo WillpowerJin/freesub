@@ -39,7 +39,7 @@ proxies:
     public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   server: 82.117.255.174
   port: 443
