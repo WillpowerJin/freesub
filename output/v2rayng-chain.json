@@ -39,25 +39,6 @@
   "outbounds": [
     {
       "tag": "n01",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "49.254.204.133",
-            "port": 1774,
-            "method": "aes-256-cfb",
-            "password": "1234!@#$"
-          }
-        ]
-      },
-      "streamSettings": {
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n02",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -81,31 +62,12 @@
       }
     },
     {
-      "tag": "n03",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "218.237.185.234",
-            "port": 4652,
-            "method": "aes-256-cfb",
-            "password": "qwerREWQ@@"
-          }
-        ]
-      },
-      "streamSettings": {
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n04",
+      "tag": "n02",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "118.167.219.24",
+            "address": "hinet1.2yly.com",
             "port": 24215,
             "users": [
               {
@@ -121,7 +83,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "addons.mozilla.org",
-          "fingerprint": "firefox",
+          "fingerprint": "chrome",
           "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
           "shortId": "",
           "spiderX": ""
@@ -132,7 +94,7 @@
       }
     },
     {
-      "tag": "n05",
+      "tag": "n03",
       "protocol": "vless",
       "settings": {
         "vnext": [
