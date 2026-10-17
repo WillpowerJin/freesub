@@ -39,17 +39,16 @@
   "outbounds": [
     {
       "tag": "n01",
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "206.1.102.64",
-            "port": 2095,
+            "address": "test.keoplentuio.xyz",
+            "port": 2053,
             "users": [
               {
-                "id": "f895d952-81c4-4810-88f0-89b21b9df3f6",
-                "alterId": 0,
-                "security": "auto"
+                "id": "9ef61079-6f7d-4911-9608-943da85d8e6f",
+                "encryption": "none"
               }
             ]
           }
@@ -64,6 +63,39 @@
     },
     {
       "tag": "n02",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "tw0.zhujue.us",
+            "port": 11000,
+            "users": [
+              {
+                "id": "0e46345c-f33b-4f9b-b8ec-90e7c986af7e",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "s0.awsstatic.com",
+          "fingerprint": "chrome",
+          "publicKey": "sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4",
+          "shortId": "",
+          "spiderX": ""
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n03",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -84,35 +116,11 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "addons.mozilla.org",
-          "fingerprint": "safari",
+          "fingerprint": "chrome",
           "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
           "shortId": "",
           "spiderX": ""
         },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n03",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "test.keoplentuio.xyz",
-            "port": 2053,
-            "users": [
-              {
-                "id": "9ef61079-6f7d-4911-9608-943da85d8e6f",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
         "sockopt": {
           "dialerProxy": "front-cm"
         }
