@@ -67,13 +67,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "tw0.zhujue.us",
-            "port": 11000,
+            "address": "206.1.100.148",
+            "port": 8443,
             "users": [
               {
-                "id": "0e46345c-f33b-4f9b-b8ec-90e7c986af7e",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "53373a04-2dd2-472e-af5d-d55fbffa7dbd",
+                "encryption": "none"
               }
             ]
           }
@@ -81,13 +80,11 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "s0.awsstatic.com",
-          "fingerprint": "chrome",
-          "publicKey": "sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4",
-          "shortId": "",
-          "spiderX": ""
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "game.jafarghasemivip.ir",
+          "allowInsecure": false,
+          "fingerprint": "safari"
         },
         "sockopt": {
           "dialerProxy": "front-cm"
@@ -100,7 +97,91 @@
       "settings": {
         "vnext": [
           {
-            "address": "hinet1.2yly.com",
+            "address": "185.115.207.141",
+            "port": 443,
+            "users": [
+              {
+                "id": "d18c6897-2849-456a-8c46-d7ecece47c20",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "wzs.echo.net.eu.org",
+          "allowInsecure": false,
+          "fingerprint": "chrome"
+        },
+        "wsSettings": {
+          "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c",
+          "headers": {
+            "Host": "wzs.echo.net.eu.org"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n04",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "183.109.131.75",
+            "port": 20086,
+            "users": [
+              {
+                "id": "b26c4803-0bca-467c-a245-c9a80bdd72ec",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n05",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "p141.panda001.net",
+            "port": 4652,
+            "method": "aes-256-cfb",
+            "password": "qwerREWQ@@"
+          }
+        ]
+      },
+      "streamSettings": {
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n06",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "118.167.219.24",
             "port": 24215,
             "users": [
               {
@@ -116,7 +197,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "addons.mozilla.org",
-          "fingerprint": "chrome",
+          "fingerprint": "firefox",
           "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
           "shortId": "",
           "spiderX": ""
@@ -127,7 +208,7 @@
       }
     },
     {
-      "tag": "n04",
+      "tag": "n07",
       "protocol": "vless",
       "settings": {
         "vnext": [
