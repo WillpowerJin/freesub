@@ -39,23 +39,18 @@
   "outbounds": [
     {
       "tag": "n01",
-      "protocol": "trojan",
+      "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
-            "address": "4c2d5151.266nets.com",
-            "port": 12031,
-            "password": "bad06c3525a6eaee1757b34776b83892"
+            "address": "218.237.185.234",
+            "port": 4652,
+            "method": "aes-256-cfb",
+            "password": "qwerREWQ@@"
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ixigua.com",
-          "allowInsecure": true
-        },
         "sockopt": {
           "dialerProxy": "front-cm"
         }
@@ -63,6 +58,39 @@
     },
     {
       "tag": "n02",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "152.32.167.33",
+            "port": 443,
+            "users": [
+              {
+                "id": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.amazon.com",
+          "fingerprint": "firefox",
+          "publicKey": "Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4",
+          "shortId": "cff998a4",
+          "spiderX": ""
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n03",
       "protocol": "vless",
       "settings": {
         "vnext": [
