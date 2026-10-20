@@ -39,36 +39,16 @@
   "outbounds": [
     {
       "tag": "n01",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "218.237.185.234",
-            "port": 4652,
-            "method": "aes-256-cfb",
-            "password": "qwerREWQ@@"
-          }
-        ]
-      },
-      "streamSettings": {
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n02",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "152.32.167.33",
-            "port": 443,
+            "address": "61.230.160.34",
+            "port": 24215,
             "users": [
               {
-                "id": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+                "encryption": "none"
               }
             ]
           }
@@ -78,10 +58,10 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "www.amazon.com",
+          "serverName": "addons.mozilla.org",
           "fingerprint": "firefox",
-          "publicKey": "Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4",
-          "shortId": "cff998a4",
+          "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "shortId": "",
           "spiderX": ""
         },
         "sockopt": {
@@ -90,7 +70,7 @@
       }
     },
     {
-      "tag": "n03",
+      "tag": "n02",
       "protocol": "vless",
       "settings": {
         "vnext": [
