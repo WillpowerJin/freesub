@@ -96,6 +96,37 @@ proxies:
     headers:
       Host: yx.jinjin909.ggff.net
   ip-version: ipv4
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: ios
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  server: 9641684.sdf65h4.top
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 250c015d-bab0-4ed3-b638-b4eda48f5840
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 9641684.sdf65h4.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 9641684.sdf65h4.top
+  ip-version: ipv4
+  dialer-proxy: 前置选择
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: 60.248.219.78
   port: 443
@@ -133,7 +164,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1792580944
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1792617367
     interval: 21600
     proxy: DIRECT
     header:
@@ -177,6 +208,17 @@ proxy-groups:
   use:
   - 前置订阅
   exclude-filter: Trojan
+- name: 家宽自动
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 30
+  timeout: 2000
+  max-failed-times: 2
+  tolerance: 150
+  lazy: false
+  proxies:
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
 - name: 台湾自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -186,6 +228,8 @@ proxy-groups:
   tolerance: 150
   lazy: false
   proxies:
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
 - name: 全部自动
   type: url-test
@@ -203,9 +247,12 @@ proxy-groups:
 - name: PROXIES
   type: select
   proxies:
+  - 家宽自动
   - 台湾自动
   - 全部自动
   - 前置自动
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
