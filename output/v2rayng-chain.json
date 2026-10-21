@@ -43,38 +43,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "hinet1.2yly.com",
-            "port": 24215,
-            "users": [
-              {
-                "id": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "addons.mozilla.org",
-          "fingerprint": "qq",
-          "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "shortId": "",
-          "spiderX": ""
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n02",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "60.248.219.78",
             "port": 443,
             "users": [
