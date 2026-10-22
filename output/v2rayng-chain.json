@@ -39,6 +39,35 @@
   "outbounds": [
     {
       "tag": "n01",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "183.109.131.75",
+            "port": 20086,
+            "users": [
+              {
+                "id": "b26c4803-0bca-467c-a245-c9a80bdd72ec",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n02",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -59,7 +88,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "addons.mozilla.org",
-          "fingerprint": "ios",
+          "fingerprint": "safari",
           "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
           "shortId": "",
           "spiderX": ""
@@ -70,7 +99,7 @@
       }
     },
     {
-      "tag": "n02",
+      "tag": "n03",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -96,9 +125,7 @@
         },
         "wsSettings": {
           "path": "/",
-          "headers": {
-            "Host": "9641684.sdf65h4.top"
-          }
+          "headers": {}
         },
         "sockopt": {
           "dialerProxy": "front-cm"
@@ -106,7 +133,7 @@
       }
     },
     {
-      "tag": "n03",
+      "tag": "n04",
       "protocol": "vless",
       "settings": {
         "vnext": [
