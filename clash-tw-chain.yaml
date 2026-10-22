@@ -97,19 +97,13 @@ proxies:
       Host: yx.jinjin909.ggff.net
   ip-version: ipv4
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: 60.248.219.78
-  port: 443
+  server: 165.154.195.38
+  port: 35034
   udp: true
-  type: vless
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  tls: true
-  servername: ty986gfazs.cainiaohub.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   ip-version: ipv4
   dialer-proxy: 前置选择
 proxy-providers:
@@ -133,7 +127,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1792687053
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1792703694
     interval: 21600
     proxy: DIRECT
     header:
