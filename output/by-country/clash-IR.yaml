@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
-  server: my2.frnhk.xyz
-  port: 443
+- name: 🇮🇷 IR 01 - xiaohe
+  server: 198.16.113.219
+  port: 8443
   udp: true
   type: vless
-  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
+  uuid: e3e0e1c3-599e-4ae1-8ad4-d9e90effacc4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SPtkbd9O6y-rdGoR2CLzW1IFr6WMlqt2lM9wU-VURig
-    short-id: 6b7a8c9d
-  servername: www.waseda.jp
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  servername: www.apple.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 rules:
 - MATCH,PROXIES

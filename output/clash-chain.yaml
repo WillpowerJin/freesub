@@ -96,19 +96,6 @@ proxies:
     headers:
       Host: yx.jinjin909.ggff.net
   ip-version: ipv4
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  server: 183.109.131.75
-  port: 20086
-  udp: true
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-  ip-version: ipv4
-  dialer-proxy: 前置选择
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: 60.248.219.78
   port: 443
@@ -146,7 +133,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1792667255
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1792687053
     interval: 21600
     proxy: DIRECT
     header:
@@ -190,16 +177,6 @@ proxy-groups:
   use:
   - 前置订阅
   exclude-filter: Trojan
-- name: 家宽自动
-  type: url-test
-  url: http://www.gstatic.com/generate_204
-  interval: 30
-  timeout: 2000
-  max-failed-times: 2
-  tolerance: 150
-  lazy: false
-  proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
 - name: 台湾自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -226,11 +203,9 @@ proxy-groups:
 - name: PROXIES
   type: select
   proxies:
-  - 家宽自动
   - 台湾自动
   - 全部自动
   - 前置自动
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
