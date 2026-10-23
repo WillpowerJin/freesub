@@ -38,6 +38,39 @@
   ],
   "outbounds": [
     {
+      "tag": "n01",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "166.0.199.78",
+            "port": 9443,
+            "users": [
+              {
+                "id": "82eb8419-59f4-4d3e-9106-d05d22af615c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.amazon.com",
+          "fingerprint": "chrome",
+          "publicKey": "0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4",
+          "shortId": "b390142456517acc",
+          "spiderX": ""
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
       "tag": "front-cm",
       "protocol": "vless",
       "settings": {
@@ -151,8 +184,27 @@
       {
         "type": "field",
         "network": "tcp,udp",
-        "outboundTag": "front-cm"
+        "balancerTag": "chain"
+      }
+    ],
+    "balancers": [
+      {
+        "tag": "chain",
+        "selector": [
+          "n"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        }
       }
     ]
+  },
+  "observatory": {
+    "subjectSelector": [
+      "n"
+    ],
+    "probeUrl": "http://www.gstatic.com/generate_204",
+    "probeInterval": "30s",
+    "enableConcurrency": true
   }
 }
