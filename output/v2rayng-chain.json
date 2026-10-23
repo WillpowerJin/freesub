@@ -38,31 +38,6 @@
   ],
   "outbounds": [
     {
-      "tag": "n01",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "165.154.195.38",
-            "port": 35034,
-            "users": [
-              {
-                "id": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
       "tag": "front-cm",
       "protocol": "vless",
       "settings": {
@@ -176,27 +151,8 @@
       {
         "type": "field",
         "network": "tcp,udp",
-        "balancerTag": "chain"
-      }
-    ],
-    "balancers": [
-      {
-        "tag": "chain",
-        "selector": [
-          "n"
-        ],
-        "strategy": {
-          "type": "leastPing"
-        }
+        "outboundTag": "front-cm"
       }
     ]
-  },
-  "observatory": {
-    "subjectSelector": [
-      "n"
-    ],
-    "probeUrl": "http://www.gstatic.com/generate_204",
-    "probeInterval": "30s",
-    "enableConcurrency": true
   }
 }
