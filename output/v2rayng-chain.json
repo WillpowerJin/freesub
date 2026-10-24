@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "hinet1.2yly.com",
-            "port": 24215,
+            "address": "23.160.56.99",
+            "port": 2087,
             "users": [
               {
-                "id": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+                "id": "f1e7eafa-0d6f-441e-8565-29f34171aef2",
                 "encryption": "none"
               }
             ]
@@ -56,14 +56,6 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "addons.mozilla.org",
-          "fingerprint": "safari",
-          "publicKey": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "shortId": "",
-          "spiderX": ""
-        },
         "sockopt": {
           "dialerProxy": "front-cm"
         }
