@@ -5,21 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-      "server": "46.8.43.125",
-      "server_port": 443,
-      "uuid": "846cedee-2a52-4a62-a0b9-11850ead6a8b",
+      "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
+      "server": "212.227.235.66",
+      "server_port": 2053,
+      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
       "tls": {
         "enabled": true,
-        "server_name": "kz-central.v8x2b.lol",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w",
-          "short_id": ""
+          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
+          "short_id": "29e8dcd2b37aaa7f"
         }
       }
     },
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

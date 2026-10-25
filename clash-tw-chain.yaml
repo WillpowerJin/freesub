@@ -104,7 +104,17 @@ proxies:
   uuid: f1e7eafa-0d6f-441e-8565-29f34171aef2
   ip-version: ipv4
   dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - xiaohe
+  server: gu232.izzzzzi.com
+  port: 20052
+  udp: true
+  type: trojan
+  password: e56e752c86a640cd
+  sni: gu232.izzzzzi.com
+  skip-cert-verify: true
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   server: tjtw.m2k699.com
   port: 24999
   udp: true
@@ -151,7 +161,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1792872942
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1792897410
     interval: 21600
     proxy: DIRECT
     header:
@@ -205,6 +215,7 @@ proxy-groups:
   lazy: false
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) R50 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - xiaohe
 - name: 台湾自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -214,7 +225,8 @@ proxy-groups:
   tolerance: 150
   lazy: false
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 - name: 全部自动
   type: url-test
@@ -237,7 +249,9 @@ proxy-groups:
   - 全部自动
   - 前置自动
   - 🇺🇸 美国 (United States) 01 (家宽) R50 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
