@@ -71,6 +71,35 @@
     },
     {
       "tag": "n02",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "hkgb707.ifastcdncache.com",
+            "port": 60852,
+            "users": [
+              {
+                "id": "f8eca8df-a1a5-4918-a194-d34112a3673f",
+                "alterId": 2,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/",
+          "headers": {}
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n03",
       "protocol": "trojan",
       "settings": {
         "servers": [

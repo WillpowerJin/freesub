@@ -109,6 +109,19 @@ proxies:
   client-fingerprint: chrome
   ip-version: ipv4
   dialer-proxy: 前置选择
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  server: hkgb707.ifastcdncache.com
+  port: 60852
+  udp: true
+  type: vmess
+  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
+  alterId: 2
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+  ip-version: ipv4
+  dialer-proxy: 前置选择
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   server: tjtw.m2k699.com
   port: 24999
@@ -140,7 +153,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1792925001
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1792942606
     interval: 21600
     proxy: DIRECT
     header:
@@ -194,6 +207,7 @@ proxy-groups:
   lazy: false
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
 - name: 台湾自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -226,6 +240,7 @@ proxy-groups:
   - 全部自动
   - 前置自动
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
