@@ -38,54 +38,6 @@
   ],
   "outbounds": [
     {
-      "tag": "n01",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "kw119.zxmm.eu.org",
-            "port": 20031,
-            "password": "00a72bf349e6479b"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "kw119.zxmm.eu.org",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n02",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "tjtw.m2k699.com",
-            "port": 24999,
-            "password": "29086912-33e4-4e06-ba2b-60f1a195864f"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "www.itunes.com",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
       "tag": "front-cm",
       "protocol": "vless",
       "settings": {
@@ -199,27 +151,8 @@
       {
         "type": "field",
         "network": "tcp,udp",
-        "balancerTag": "chain"
-      }
-    ],
-    "balancers": [
-      {
-        "tag": "chain",
-        "selector": [
-          "n"
-        ],
-        "strategy": {
-          "type": "leastPing"
-        }
+        "outboundTag": "front-cm"
       }
     ]
-  },
-  "observatory": {
-    "subjectSelector": [
-      "n"
-    ],
-    "probeUrl": "http://www.gstatic.com/generate_204",
-    "probeInterval": "30s",
-    "enableConcurrency": true
   }
 }

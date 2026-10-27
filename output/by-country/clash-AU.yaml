@@ -24,7 +24,7 @@ proxies:
   type: trojan
   password: Trojan@82164024
   sni: au.tronsg.com
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   server: 45.63.30.142
   port: 443
