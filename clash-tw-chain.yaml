@@ -96,7 +96,16 @@ proxies:
     headers:
       Host: yx.jinjin909.ggff.net
   ip-version: ipv4
-- name: 🇮🇳 印度 (India) 01 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇮🇳 印度 (India) 02 (家宽) - xiaohe
   server: 122.176.216.52
   port: 443
   udp: true
@@ -111,21 +120,6 @@ proxies:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
-  ip-version: ipv4
-  dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: 83.147.14.168
-  port: 9443
-  udp: true
-  type: vless
-  uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
   ip-version: ipv4
   dialer-proxy: 前置选择
 proxy-providers:
@@ -149,7 +143,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1793189685
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1793212123
     interval: 21600
     proxy: DIRECT
     header:
@@ -202,17 +196,8 @@ proxy-groups:
   tolerance: 150
   lazy: false
   proxies:
-  - 🇮🇳 印度 (India) 01 (家宽) - xiaohe
-- name: 台湾自动
-  type: url-test
-  url: http://www.gstatic.com/generate_204
-  interval: 30
-  timeout: 2000
-  max-failed-times: 2
-  tolerance: 150
-  lazy: false
-  proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇮🇳 印度 (India) 02 (家宽) - xiaohe
 - name: 全部自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -230,11 +215,10 @@ proxy-groups:
   type: select
   proxies:
   - 家宽自动
-  - 台湾自动
   - 全部自动
   - 前置自动
-  - 🇮🇳 印度 (India) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇮🇳 印度 (India) 02 (家宽) - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
 - DOMAIN-SUFFIX,090227.xyz,DIRECT
