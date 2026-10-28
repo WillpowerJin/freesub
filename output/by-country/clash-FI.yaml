@@ -5,6 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 45.149.147.213
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
+  tls: true
+  servername: 45-149-147-213.sslip.io
+  skip-cert-verify: false
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: kobedin-server1-vless
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -15,29 +40,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 45.149.147.213
-  port: 4444
-  udp: true
-  type: trojan
-  password: 9b347a9b-d7a6-4b51-9890-eff62b832834
-  sni: 45-149-147-213.sslip.io
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: kobedin-server1-trojan
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 45.149.147.213
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
-  tls: true
-  servername: 45-149-147-213.sslip.io
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: kobedin-server1-vless
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 65.109.212.193
   port: 465
@@ -53,17 +55,16 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 95.216.27.15
-  port: 2053
+  server: 45.149.147.213
+  port: 4444
   udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
+  type: trojan
+  password: 9b347a9b-d7a6-4b51-9890-eff62b832834
+  sni: 45-149-147-213.sslip.io
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: kobedin-server1-trojan
 proxy-groups:
 - name: PROXIES
   type: select
