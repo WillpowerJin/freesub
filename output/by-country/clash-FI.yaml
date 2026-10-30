@@ -16,6 +16,19 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 45.144.52.187
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
+  tls: true
+  servername: b.fi-1.bnc-gt.co.uk
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 65.109.210.221
   port: 465
   udp: true
@@ -30,15 +43,6 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: cd0.bmi.ir.kolman.com.de
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 2da85937-93d9-4509-8491-63b1921cf447
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 65.109.211.81
   port: 465
