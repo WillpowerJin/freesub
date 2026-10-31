@@ -39,18 +39,23 @@
   "outbounds": [
     {
       "tag": "n01",
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "49.254.204.133",
-            "port": 1774,
-            "method": "aes-256-cfb",
-            "password": "1234!@#$"
+            "address": "112.169.175.199",
+            "port": 31157,
+            "users": [
+              {
+                "id": "bd2fb303-b4c7-49af-a8e3-5c6f11b005dd",
+                "encryption": "none"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
+        "network": "tcp",
         "sockopt": {
           "dialerProxy": "front-cm"
         }
@@ -58,6 +63,42 @@
     },
     {
       "tag": "n02",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "122.176.216.52",
+            "port": 443,
+            "users": [
+              {
+                "id": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "app-6ada5023.deploy.meerasolution.com",
+          "allowInsecure": false,
+          "fingerprint": "chrome"
+        },
+        "wsSettings": {
+          "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+          "headers": {
+            "Host": "app-6ada5023.deploy.meerasolution.com"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n03",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -90,7 +131,7 @@
       }
     },
     {
-      "tag": "n03",
+      "tag": "n04",
       "protocol": "vless",
       "settings": {
         "vnext": [

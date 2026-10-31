@@ -97,12 +97,28 @@ proxies:
       Host: yx.jinjin909.ggff.net
   ip-version: ipv4
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  server: 49.254.204.133
-  port: 1774
+  server: 112.169.175.199
+  port: 31157
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  type: vless
+  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇮🇳 印度 (India) 02 (家宽) - xiaohe
+  server: 122.176.216.52
+  port: 443
+  udp: true
+  type: vless
+  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+  tls: true
+  servername: app-6ada5023.deploy.meerasolution.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+    headers:
+      Host: app-6ada5023.deploy.meerasolution.com
   ip-version: ipv4
   dialer-proxy: 前置选择
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
@@ -156,7 +172,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1793397778
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1793419013
     interval: 21600
     proxy: DIRECT
     header:
@@ -210,6 +226,7 @@ proxy-groups:
   lazy: false
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇮🇳 印度 (India) 02 (家宽) - xiaohe
 - name: 台湾自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -242,6 +259,7 @@ proxy-groups:
   - 全部自动
   - 前置自动
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇮🇳 印度 (India) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 rules:
