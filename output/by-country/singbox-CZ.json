@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇳 CN 01 - xiaohe",
-      "server": "104.17.11.191",
+      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
+      "server": "212.102.38.25",
       "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "uuid": "b34a52cb-cd52-49a8-9362-b8e97c151d49",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false,
+        "server_name": "udemy.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE",
+          "short_id": "e90360ec7cc61b20"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
