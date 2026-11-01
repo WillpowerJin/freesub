@@ -39,6 +39,41 @@
   "outbounds": [
     {
       "tag": "n01",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.13.229",
+            "port": 443,
+            "users": [
+              {
+                "id": "5f11c240-89df-494c-9c81-8b619023bb58",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "789156.xyz",
+          "allowInsecure": false
+        },
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "789156.xyz"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n02",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -57,7 +92,39 @@
       }
     },
     {
-      "tag": "n02",
+      "tag": "n03",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "ea800f9e-ca6c-11ef-8e74-f23c913c8d2b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "download.windowsupdate.com",
+          "fingerprint": "chrome",
+          "publicKey": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
+          "shortId": "",
+          "spiderX": ""
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n04",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -93,7 +160,40 @@
       }
     },
     {
-      "tag": "n03",
+      "tag": "n05",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "n04.jinggai.online",
+            "port": 8443,
+            "users": [
+              {
+                "id": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "n04.jinggai.online",
+          "allowInsecure": false
+        },
+        "wsSettings": {
+          "path": "/nvl-n04-ws/e0577fe8fd7c8823",
+          "headers": {}
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n06",
       "protocol": "vless",
       "settings": {
         "vnext": [
