@@ -31,7 +31,7 @@ proxies:
   servername: deepl.com
   client-fingerprint: random
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  server: 5.253.28.240
+  server: hydra.yokkastars.com
   port: 2443
   udp: true
   type: vless
