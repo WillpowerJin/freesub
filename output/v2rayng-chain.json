@@ -43,7 +43,7 @@
       "settings": {
         "servers": [
           {
-            "address": "us001.zestapp778.com",
+            "address": "130.94.19.95",
             "port": 57277,
             "password": "5t6i121em5lkmsmk"
           }
@@ -98,25 +98,6 @@
     },
     {
       "tag": "n03",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "49.254.204.133",
-            "port": 1774,
-            "method": "aes-256-cfb",
-            "password": "1234!@#$"
-          }
-        ]
-      },
-      "streamSettings": {
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n04",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -142,6 +123,30 @@
           "publicKey": "od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg",
           "shortId": "17fa3af0924c88b3",
           "spiderX": ""
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n04",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "us001.zestapp778.com",
+            "port": 57277,
+            "password": "5t6i121em5lkmsmk"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "us001.zestapp778.com",
+          "allowInsecure": false
         },
         "sockopt": {
           "dialerProxy": "front-cm"

@@ -18,7 +18,7 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "191.217.245.227",
+      "server": "191.217.245.10",
       "server_port": 443,
       "uuid": "2614a96d-e39f-4cca-a9c7-467a178c2c0a",
       "flow": "xtls-rprx-vision",
@@ -39,7 +39,7 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
-      "server": "191.217.245.10",
+      "server": "191.217.245.227",
       "server_port": 443,
       "uuid": "2614a96d-e39f-4cca-a9c7-467a178c2c0a",
       "flow": "xtls-rprx-vision",

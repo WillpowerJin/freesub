@@ -13,7 +13,7 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 191.217.245.227
+  server: 191.217.245.10
   port: 443
   udp: true
   type: vless
@@ -25,7 +25,7 @@ proxies:
   servername: pl.lenvex.cc
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 191.217.245.10
+  server: 191.217.245.227
   port: 443
   udp: true
   type: vless
