@@ -39,6 +39,65 @@
   "outbounds": [
     {
       "tag": "n01",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "us001.zestapp778.com",
+            "port": 57277,
+            "password": "5t6i121em5lkmsmk"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "us001.zestapp778.com",
+          "allowInsecure": false
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n02",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "60.248.219.78",
+            "port": 443,
+            "users": [
+              {
+                "id": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ty986gfazs.cainiaohub.xyz",
+          "allowInsecure": true
+        },
+        "wsSettings": {
+          "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
+          "headers": {
+            "Host": "ty986gfazs.cainiaohub.xyz"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n03",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -57,71 +116,32 @@
       }
     },
     {
-      "tag": "n02",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "us001.zestapp778.com",
-            "port": 57277,
-            "password": "5t6i121em5lkmsmk"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "us001.zestapp778.com",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n03",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "ench-snet-app.w-ctrip.cn",
-            "port": 22003,
-            "password": "b17e9b52db9623bd6c16eea3d7adb5b3"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "cm.g.doubleclick.net",
-          "allowInsecure": true
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
       "tag": "n04",
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "ench-snet-app.w-ctrip.cn",
-            "port": 54815,
-            "password": "b17e9b52db9623bd6c16eea3d7adb5b3"
+            "address": "tr2.h1cloud.net",
+            "port": 25021,
+            "users": [
+              {
+                "id": "2446e2e2-1ce3-4502-9050-1dd32bacc68c",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "cm.g.doubleclick.net",
-          "allowInsecure": true
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.samsung.com",
+          "fingerprint": "chrome",
+          "publicKey": "od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg",
+          "shortId": "17fa3af0924c88b3",
+          "spiderX": ""
         },
         "sockopt": {
           "dialerProxy": "front-cm"
