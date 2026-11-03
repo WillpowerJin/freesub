@@ -43,18 +43,22 @@
       "settings": {
         "servers": [
           {
-            "address": "130.94.19.95",
-            "port": 57277,
-            "password": "5t6i121em5lkmsmk"
+            "address": "104.17.148.22",
+            "port": 8443,
+            "password": "uFepQ5r4JSusbY"
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "us001.zestapp778.com",
+          "serverName": "floral-grass-aa1e.dianawpewpek1.workers.dev",
           "allowInsecure": false
+        },
+        "wsSettings": {
+          "path": "/?ed=2048",
+          "headers": {}
         },
         "sockopt": {
           "dialerProxy": "front-cm"
@@ -90,63 +94,6 @@
           "headers": {
             "Host": "ty986gfazs.cainiaohub.xyz"
           }
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n03",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "tr2.h1cloud.net",
-            "port": 25021,
-            "users": [
-              {
-                "id": "2446e2e2-1ce3-4502-9050-1dd32bacc68c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.samsung.com",
-          "fingerprint": "chrome",
-          "publicKey": "od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg",
-          "shortId": "17fa3af0924c88b3",
-          "spiderX": ""
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n04",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "us001.zestapp778.com",
-            "port": 57277,
-            "password": "5t6i121em5lkmsmk"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "us001.zestapp778.com",
-          "allowInsecure": false
         },
         "sockopt": {
           "dialerProxy": "front-cm"
