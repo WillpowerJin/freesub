@@ -4,29 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe",
-      "server": "104.17.148.22",
-      "server_port": 8443,
-      "password": "uFepQ5r4JSusbY",
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+      "server": "56481.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
       "tls": {
         "enabled": true,
-        "server_name": "floral-grass-aa1e.dianawpewpek1.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "floral-grass-aa1e.dianawpewpek1.workers.dev"
-        }
+        "server_name": "images.ctfassets.net",
+        "insecure": true
       }
     },
     {
@@ -34,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
