@@ -39,7 +39,7 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 03 - xiaohe",
-      "server": "13.143.184.58",
+      "server": "connect2.accessgate.link",
       "server_port": 2086,
       "uuid": "2f6c70f3-206a-4bc1-ac1f-6b70153f9c73",
       "flow": "xtls-rprx-vision",
@@ -48,7 +48,7 @@
         "server_name": "unpkg.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
