@@ -31,8 +31,7 @@ proxies:
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   tls: true
   servername: se3.shtil.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
