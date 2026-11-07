@@ -73,41 +73,6 @@
       }
     },
     {
-      "tag": "n02",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "n04.jinggai.online",
-            "port": 8443,
-            "users": [
-              {
-                "id": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "n04.jinggai.online",
-          "allowInsecure": false
-        },
-        "wsSettings": {
-          "path": "/nvl-n04-ws/e0577fe8fd7c8823",
-          "headers": {
-            "Host": "n04.jinggai.online"
-          }
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
       "tag": "front-cm",
       "protocol": "vless",
       "settings": {
