@@ -38,25 +38,6 @@
   ],
   "outbounds": [
     {
-      "tag": "n01",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "49.254.204.133",
-            "port": 1774,
-            "method": "aes-256-cfb",
-            "password": "1234!@#$"
-          }
-        ]
-      },
-      "streamSettings": {
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
       "tag": "front-cm",
       "protocol": "vless",
       "settings": {
@@ -170,27 +151,8 @@
       {
         "type": "field",
         "network": "tcp,udp",
-        "balancerTag": "chain"
-      }
-    ],
-    "balancers": [
-      {
-        "tag": "chain",
-        "selector": [
-          "n"
-        ],
-        "strategy": {
-          "type": "leastPing"
-        }
+        "outboundTag": "front-cm"
       }
     ]
-  },
-  "observatory": {
-    "subjectSelector": [
-      "n"
-    ],
-    "probeUrl": "http://www.gstatic.com/generate_204",
-    "probeInterval": "30s",
-    "enableConcurrency": true
   }
 }
