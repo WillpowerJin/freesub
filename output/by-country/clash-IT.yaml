@@ -5,49 +5,53 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - xiaohe
-  server: 202.50.253.36
-  port: 19999
+  server: 208.103.161.16
+  port: 2096
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: trojan
+  password: hWsj5AwIRPF8
+  sni: rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
 - name: 🇮🇹 意大利 (Italy) 02 - xiaohe
-  server: 185.164.175.81
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 03 - xiaohe
-  server: 149.50.215.234
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 04 - xiaohe
-  server: 202.50.253.72
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
-  server: 202.50.253.63
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 06 - xiaohe
   server: 202.50.253.18
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 03 - xiaohe
+  server: 202.50.253.36
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 04 - xiaohe
+  server: 202.50.253.63
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
+  server: 185.164.175.81
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 06 - xiaohe
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 07 - xiaohe
-  server: 202.50.253.81
+  server: 149.50.215.234
   port: 19999
   udp: true
   type: ss
@@ -61,14 +65,14 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 09 - xiaohe
-  server: 202.50.253.54
+  server: 202.50.253.72
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 10 - xiaohe
-  server: 202.50.253.90
+  server: 202.50.253.81
   port: 19999
   udp: true
   type: ss
@@ -83,6 +87,13 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 12 - xiaohe
   server: 202.50.253.99
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 13 - xiaohe
+  server: 202.50.253.54
   port: 19999
   udp: true
   type: ss
@@ -105,6 +116,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 10 - xiaohe
   - 🇮🇹 意大利 (Italy) 11 - xiaohe
   - 🇮🇹 意大利 (Italy) 12 - xiaohe
+  - 🇮🇹 意大利 (Italy) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -122,5 +134,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 10 - xiaohe
   - 🇮🇹 意大利 (Italy) 11 - xiaohe
   - 🇮🇹 意大利 (Italy) 12 - xiaohe
+  - 🇮🇹 意大利 (Italy) 13 - xiaohe
 rules:
 - MATCH,PROXIES

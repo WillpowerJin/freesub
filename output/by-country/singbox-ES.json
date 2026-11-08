@@ -4,20 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-      "server": "213.182.201.18",
-      "server_port": 3090,
-      "uuid": "8bac7917-b4d2-4338-bbfc-5d47bda8c5ab",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
+      "server": "66.163.118.103",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-      "server": "66.163.118.103",
+      "server": "167.17.71.167",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -41,7 +38,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -53,6 +50,30 @@
     {
       "type": "trojan",
       "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
+      "server": "66.163.118.166",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "learn.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
+      "server": "66.163.118.40",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 07 - xiaohe",
       "server": "66.163.118.244",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -61,14 +82,6 @@
         "server_name": "api.discovergreatjobsandadvanceyourcareer.com",
         "insecure": false
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
-      "server": "167.17.71.167",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "selector",
@@ -80,7 +93,8 @@
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
         "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 06 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 06 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 07 - xiaohe"
       ]
     },
     {
@@ -92,7 +106,8 @@
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
         "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 06 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 06 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
