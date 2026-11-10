@@ -39,6 +39,25 @@
   "outbounds": [
     {
       "tag": "n01",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "49.254.204.133",
+            "port": 1774,
+            "method": "aes-256-cfb",
+            "password": "1234!@#$"
+          }
+        ]
+      },
+      "streamSettings": {
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n02",
       "protocol": "vless",
       "settings": {
         "vnext": [
