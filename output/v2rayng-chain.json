@@ -39,23 +39,37 @@
   "outbounds": [
     {
       "tag": "n01",
-      "protocol": "trojan",
+      "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
-            "address": "130.94.19.95",
-            "port": 57277,
-            "password": "5t6i121em5lkmsmk"
+            "address": "49.254.204.133",
+            "port": 1774,
+            "method": "aes-256-cfb",
+            "password": "1234!@#$"
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "us001.zestapp778.com",
-          "allowInsecure": false
-        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n02",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "amasoid.ddns.net",
+            "port": 14514,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "b7I6g7l7fJhBaMInJ+zkzw=="
+          }
+        ]
+      },
+      "streamSettings": {
         "sockopt": {
           "dialerProxy": "front-cm"
         }
