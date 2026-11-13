@@ -57,38 +57,6 @@
       }
     },
     {
-      "tag": "n02",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "83.147.13.74",
-            "port": 8443,
-            "users": [
-              {
-                "id": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "github.githubassets.com",
-          "fingerprint": "chrome",
-          "publicKey": "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA",
-          "shortId": "4ad2e4e660550e43",
-          "spiderX": ""
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
       "tag": "front-cm",
       "protocol": "vless",
       "settings": {
