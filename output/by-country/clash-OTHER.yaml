@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.18.10.66
+  server: 172.67.187.219
   port: 443
   udp: true
   type: vless
-  uuid: 2874e26b-45e3-4d12-9e01-3f5a1c6a7105
+  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
   tls: true
-  servername: dietary-forms-begun-orientation.trycloudflare.com
+  servername: ave-qualifications-choices-populations.trycloudflare.com
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /d9fb7b4f14c1
+    path: /a8b8606819ef
     headers:
-      Host: dietary-forms-begun-orientation.trycloudflare.com
+      Host: ave-qualifications-choices-populations.trycloudflare.com
 proxy-groups:
 - name: PROXIES
   type: select
