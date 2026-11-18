@@ -39,6 +39,25 @@
   "outbounds": [
     {
       "tag": "n01",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "49.254.204.133",
+            "port": 1774,
+            "method": "aes-256-cfb",
+            "password": "1234!@#$"
+          }
+        ]
+      },
+      "streamSettings": {
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n02",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -73,23 +92,32 @@
       }
     },
     {
-      "tag": "n02",
-      "protocol": "trojan",
+      "tag": "n03",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "34.80.15.95",
+            "address": "85.237.207.221",
             "port": 443,
-            "password": "123456"
+            "users": [
+              {
+                "id": "b59bcb5b-5150-4c6b-9227-681886197014",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "tw.ctt25.uk",
-          "allowInsecure": false
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "chrome",
+          "publicKey": "lJz7AGWUC-ZTEIJaU5y1GRrROWJ9J_VzQRyrYPmOygs",
+          "shortId": "fd2fa5e06670120b",
+          "spiderX": ""
         },
         "sockopt": {
           "dialerProxy": "front-cm"
