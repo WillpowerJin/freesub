@@ -58,6 +58,25 @@
     },
     {
       "tag": "n02",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "49.254.204.133",
+            "port": 1774,
+            "method": "aes-256-cfb",
+            "password": "1234!@#$"
+          }
+        ]
+      },
+      "streamSettings": {
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n03",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -85,39 +104,6 @@
           "headers": {
             "Host": "ty986gfazs.cainiaohub.xyz"
           }
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n03",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "85.237.207.221",
-            "port": 443,
-            "users": [
-              {
-                "id": "b59bcb5b-5150-4c6b-9227-681886197014",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "dl.google.com",
-          "fingerprint": "chrome",
-          "publicKey": "lJz7AGWUC-ZTEIJaU5y1GRrROWJ9J_VzQRyrYPmOygs",
-          "shortId": "fd2fa5e06670120b",
-          "spiderX": ""
         },
         "sockopt": {
           "dialerProxy": "front-cm"
