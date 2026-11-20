@@ -39,42 +39,6 @@
   "outbounds": [
     {
       "tag": "n01",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.88.98",
-            "port": 443,
-            "users": [
-              {
-                "id": "afa524de-2b93-4be9-b846-6bc88d8a2ce1",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "1v5Vp5jsQ611A5dsm.PAges.dEV",
-          "allowInsecure": false,
-          "fingerprint": "chrome"
-        },
-        "wsSettings": {
-          "path": "/vl/fbo164EXEqNcjQ9WdWcK?ed=2560",
-          "headers": {
-            "Host": "1v5vp5jsq611a5dsm.pages.dev"
-          }
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n02",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -93,26 +57,7 @@
       }
     },
     {
-      "tag": "n03",
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "49.254.204.133",
-            "port": 1774,
-            "method": "aes-256-cfb",
-            "password": "1234!@#$"
-          }
-        ]
-      },
-      "streamSettings": {
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n04",
+      "tag": "n02",
       "protocol": "vless",
       "settings": {
         "vnext": [
