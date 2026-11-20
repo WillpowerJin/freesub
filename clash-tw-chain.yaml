@@ -96,7 +96,24 @@ proxies:
     headers:
       Host: yx.jinjin909.ggff.net
   ip-version: ipv4
-- name: 🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  server: 172.64.88.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
+  tls: true
+  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
+    headers:
+      Host: 1v5vp5jsq611a5dsm.pages.dev
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe
   server: 47.85.162.44
   port: 443
   udp: true
@@ -105,7 +122,7 @@ proxies:
   password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
   ip-version: ipv4
   dialer-proxy: 前置选择
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
   server: 49.254.204.133
   port: 1774
   udp: true
@@ -114,7 +131,7 @@ proxies:
   password: 1234!@#$
   ip-version: ipv4
   dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   server: 60.248.219.78
   port: 443
   udp: true
@@ -151,7 +168,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1795101239
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1795134061
     interval: 21600
     proxy: DIRECT
     header:
@@ -204,9 +221,10 @@ proxy-groups:
   tolerance: 150
   lazy: false
   proxies:
-  - 🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 - name: 台湾自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -237,9 +255,10 @@ proxy-groups:
   - 台湾自动
   - 全部自动
   - 前置自动
-  - 🇩🇪 德国 (Germany) 01 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
