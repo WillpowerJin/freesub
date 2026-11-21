@@ -6,61 +6,56 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "188.114.98.0",
+      "server": "172.67.139.189",
       "server_port": 443,
-      "uuid": "88e79aa6-f431-4453-8dcc-652a0c747198",
+      "uuid": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
       "tls": {
         "enabled": true,
-        "server_name": "o685y.save-node.com",
+        "server_name": "fr-free.fastestrelay.com",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/api/se1k2rfxlsuer3ry4u6e84kl8rqp721p",
+        "path": "/700gvl",
         "headers": {
-          "Host": "o685y.save-node.com"
+          "Host": "fr-free.fastestrelay.com"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "server": "chatgpt.com",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/tyxyws",
+        "path": "/lMnsZUN4/",
         "headers": {
-          "Host": "jp3.yohototo.top"
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 03 - xiaohe",
-      "server": "188.114.98.0",
+      "server": "104.16.10.185",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
         "server_name": "jp3.yohototo.top",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
