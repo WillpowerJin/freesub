@@ -105,19 +105,30 @@ proxies:
   password: 1234!@#$
   ip-version: ipv4
   dialer-proxy: 前置选择
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: dp8yk.xiaoyan.io
-  port: 16616
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  server: 60.248.219.78
+  port: 443
   udp: true
-  type: vmess
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  tls: true
+  servername: ty986gfazs.cainiaohub.xyz
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+      Host: ty986gfazs.cainiaohub.xyz
+  ip-version: ipv4
+  dialer-proxy: 前置选择
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  server: 34.80.15.95
+  port: 443
+  udp: true
+  type: trojan
+  password: '123456'
+  sni: tw.ctt25.uk
+  skip-cert-verify: false
   ip-version: ipv4
   dialer-proxy: 前置选择
 proxy-providers:
@@ -141,7 +152,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1795238827
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1795270413
     interval: 21600
     proxy: DIRECT
     header:
@@ -195,6 +206,7 @@ proxy-groups:
   lazy: false
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
 - name: 台湾自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -204,6 +216,7 @@ proxy-groups:
   tolerance: 150
   lazy: false
   proxies:
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
 - name: 全部自动
   type: url-test
@@ -226,6 +239,8 @@ proxy-groups:
   - 全部自动
   - 前置自动
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT

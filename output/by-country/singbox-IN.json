@@ -40,12 +40,12 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - xiaohe",
-      "server": "172.67.199.215",
+      "server": "13.140.253.35",
       "server_port": 443,
       "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
       "tls": {
         "enabled": true,
-        "server_name": "small-forest-d3e9.sarahds.workers.dev",
+        "server_name": "xray-dmr3b3hy-calm-maple-7.cloady.io",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -56,7 +56,7 @@
         "type": "ws",
         "path": "/0175469f14317d82",
         "headers": {
-          "Host": "small-forest-d3e9.sarahds.workers.dev"
+          "Host": "xray-dmr3b3hy-calm-maple-7.cloady.io"
         }
       }
     },
