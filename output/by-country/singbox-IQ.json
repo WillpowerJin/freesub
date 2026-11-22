@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "144.31.3.89",
+      "tag": "🇮🇶 IQ 01 - xiaohe",
+      "server": "5d0319t.nl7.h1clayd.click",
       "server_port": 443,
-      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
       "tls": {
         "enabled": true,
-        "server_name": "clearingmatch.melodramaonline.net",
-        "insecure": false,
+        "server_name": "5d0319t.nl7.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs",
+          "short_id": "361d0dd59c70516f"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/media/ws/"
       }
     },
     {
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

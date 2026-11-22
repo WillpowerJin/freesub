@@ -113,13 +113,18 @@ proxies:
   ip-version: ipv4
   dialer-proxy: 前置选择
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: 34.80.15.95
-  port: 443
+  server: 162.19.192.89
+  port: 16616
   udp: true
-  type: trojan
-  password: '123456'
-  sni: tw.ctt25.uk
-  skip-cert-verify: false
+  type: vmess
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
   ip-version: ipv4
   dialer-proxy: 前置选择
 proxy-providers:
@@ -143,7 +148,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1795301428
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1795323275
     interval: 21600
     proxy: DIRECT
     header:
