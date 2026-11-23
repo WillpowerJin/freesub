@@ -42,7 +42,7 @@ proxies:
   tls: true
   servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
@@ -60,19 +60,18 @@ proxies:
   ws-opts:
     path: /media/ws/
 - name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  server: 92.223.84.254
-  port: 443
+  server: 185.117.88.9
+  port: 8443
   udp: true
   type: vless
-  uuid: 63242a2a-7bdb-4775-bc3f-65c2f260f224
+  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
+  flow: xtls-rprx-vision
   tls: true
-  servername: subgift.gcorecdn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /t.me-SubGift
-    headers:
-      Host: subgift.gcorecdn.com
+  reality-opts:
+    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
+    short-id: f8d0271b4b5f9efc
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
   server: 2.26.93.106
   port: 443
@@ -86,19 +85,6 @@ proxies:
   network: ws
   ws-opts:
     path: /media/ws/
-- name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
-  server: 185.117.88.9
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
-    short-id: f8d0271b4b5f9efc
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -111,7 +97,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,6 +109,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
 rules:
 - MATCH,PROXIES

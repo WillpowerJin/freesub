@@ -39,6 +39,25 @@
   "outbounds": [
     {
       "tag": "n01",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "49.254.204.133",
+            "port": 1774,
+            "method": "aes-256-cfb",
+            "password": "1234!@#$"
+          }
+        ]
+      },
+      "streamSettings": {
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n02",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -73,7 +92,26 @@
       }
     },
     {
-      "tag": "n02",
+      "tag": "n03",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "47.254.167.157",
+            "port": 443,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
+          }
+        ]
+      },
+      "streamSettings": {
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n04",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -97,7 +135,7 @@
       }
     },
     {
-      "tag": "n03",
+      "tag": "n05",
       "protocol": "vmess",
       "settings": {
         "vnext": [
