@@ -5,20 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.94.203
-  port: 443
+  server: 104.21.0.1
+  port: 2083
   udp: true
-  type: vless
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: fr-free.fastestrelay.com
+  servername: or3.sfacg.uk
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /700gvl
+    path: /or3
     headers:
-      Host: fr-free.fastestrelay.com
+      Host: or3.sfacg.uk
 proxy-groups:
 - name: PROXIES
   type: select

@@ -4,25 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.94.203",
-      "server_port": 443,
-      "uuid": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
+      "server": "104.21.0.1",
+      "server_port": 2083,
+      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "fr-free.fastestrelay.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "or3.sfacg.uk",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/700gvl",
+        "path": "/or3",
         "headers": {
-          "Host": "fr-free.fastestrelay.com"
+          "Host": "or3.sfacg.uk"
         }
       }
     },
