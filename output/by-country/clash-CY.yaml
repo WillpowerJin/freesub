@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 195.133.93.227
+- name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  server: 132.243.242.216
   port: 9543
   udp: true
   type: vless
@@ -22,12 +22,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
 rules:
 - MATCH,PROXIES
