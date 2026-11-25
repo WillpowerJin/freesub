@@ -96,7 +96,7 @@ proxies:
     headers:
       Host: yx.jinjin909.ggff.net
   ip-version: ipv4
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   server: 60.248.219.78
   port: 443
   udp: true
@@ -133,7 +133,7 @@ proxy-providers:
       lazy: false
   全部套链:
     type: http
-    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1795539732
+    url: https://cdn.jsdelivr.net/gh/WillpowerJin/freesub@main/output/clash.yaml?v=1795572057
     interval: 21600
     proxy: DIRECT
     header:
@@ -186,7 +186,7 @@ proxy-groups:
   tolerance: 150
   lazy: false
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
 - name: 全部自动
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -206,7 +206,7 @@ proxy-groups:
   - 台湾自动
   - 全部自动
   - 前置自动
-  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
 rules:
 - DOMAIN-SUFFIX,ggff.net,DIRECT
 - DOMAIN-SUFFIX,090227.xyz,DIRECT
