@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "194.135.34.118",
-      "server_port": 8443,
-      "uuid": "020f7f86-a559-4366-8d2d-c6f81d6bbe5f",
+      "server": "turkey-ip1.mmdaqaorg.xyz",
+      "server_port": 50738,
+      "uuid": "56665684-5ac0-4ba9-9d49-8b258fb57974",
       "tls": {
         "enabled": true,
-        "server_name": "web.hosttcp.fun",
+        "server_name": "turkey-ip1.mmdaqaorg.xyz",
         "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v4/media/session"
       }
     },
     {

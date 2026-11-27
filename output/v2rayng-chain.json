@@ -43,11 +43,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "209.9.200.147",
-            "port": 443,
+            "address": "172.66.47.45",
+            "port": 2083,
             "users": [
               {
-                "id": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
+                "id": "d342d11e-d424-4583-b36e-524ab1f0afa4",
                 "encryption": "none"
               }
             ]
@@ -55,14 +55,48 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "navi.bankrate.com",
-          "fingerprint": "chrome",
-          "publicKey": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
-          "shortId": "2da72ce6",
-          "spiderX": ""
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "wk1.f1w.de5.net",
+          "allowInsecure": false,
+          "fingerprint": "chrome"
+        },
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "wk1.f1w.de5.net"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n02",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v2new.nimbaha9.ir",
+            "port": 8080,
+            "users": [
+              {
+                "id": "f279c19a-b324-40cf-af57-049f9b1b68f2",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/XDS45",
+          "headers": {
+            "Host": "v2new.nimbaha9.ir"
+          }
         },
         "sockopt": {
           "dialerProxy": "front-cm"
