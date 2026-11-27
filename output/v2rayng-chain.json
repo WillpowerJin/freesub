@@ -38,72 +38,6 @@
   ],
   "outbounds": [
     {
-      "tag": "n01",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.66.47.45",
-            "port": 2083,
-            "users": [
-              {
-                "id": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "wk1.f1w.de5.net",
-          "allowInsecure": false,
-          "fingerprint": "chrome"
-        },
-        "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "wk1.f1w.de5.net"
-          }
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
-      "tag": "n02",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "v2new.nimbaha9.ir",
-            "port": 8080,
-            "users": [
-              {
-                "id": "f279c19a-b324-40cf-af57-049f9b1b68f2",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/XDS45",
-          "headers": {
-            "Host": "v2new.nimbaha9.ir"
-          }
-        },
-        "sockopt": {
-          "dialerProxy": "front-cm"
-        }
-      }
-    },
-    {
       "tag": "front-cm",
       "protocol": "vless",
       "settings": {
@@ -217,27 +151,8 @@
       {
         "type": "field",
         "network": "tcp,udp",
-        "balancerTag": "chain"
-      }
-    ],
-    "balancers": [
-      {
-        "tag": "chain",
-        "selector": [
-          "n"
-        ],
-        "strategy": {
-          "type": "leastPing"
-        }
+        "outboundTag": "front-cm"
       }
     ]
-  },
-  "observatory": {
-    "subjectSelector": [
-      "n"
-    ],
-    "probeUrl": "http://www.gstatic.com/generate_204",
-    "probeInterval": "30s",
-    "enableConcurrency": true
   }
 }
