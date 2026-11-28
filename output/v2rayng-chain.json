@@ -38,6 +38,57 @@
   ],
   "outbounds": [
     {
+      "tag": "n01",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "49.254.204.133",
+            "port": 1774,
+            "method": "aes-256-cfb",
+            "password": "1234!@#$"
+          }
+        ]
+      },
+      "streamSettings": {
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
+      "tag": "n02",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "130.94.30.242",
+            "port": 443,
+            "users": [
+              {
+                "id": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "navi.bankrate.com",
+          "fingerprint": "chrome",
+          "publicKey": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
+          "shortId": "2da72ce6",
+          "spiderX": ""
+        },
+        "sockopt": {
+          "dialerProxy": "front-cm"
+        }
+      }
+    },
+    {
       "tag": "front-cm",
       "protocol": "vless",
       "settings": {
@@ -151,8 +202,27 @@
       {
         "type": "field",
         "network": "tcp,udp",
-        "outboundTag": "front-cm"
+        "balancerTag": "chain"
+      }
+    ],
+    "balancers": [
+      {
+        "tag": "chain",
+        "selector": [
+          "n"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        }
       }
     ]
+  },
+  "observatory": {
+    "subjectSelector": [
+      "n"
+    ],
+    "probeUrl": "http://www.gstatic.com/generate_204",
+    "probeInterval": "30s",
+    "enableConcurrency": true
   }
 }
